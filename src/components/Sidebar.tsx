@@ -9,7 +9,7 @@ function Sidebar(){
         <aside className="bg-primary flex flex-col gap-2 items-center w-[60px] h-screen mr-auto sticky">
             <div className="pt-5 pb-4">
                 <a href="#">
-                    <img src={logo} alt="Juan Carlos's Logo, Full Stack Developer" width="40px"/>
+                    <img src={logo} alt="Juan Carlos's logo, full stack developer" width="40px"/>
                 </a>
             </div>
 
@@ -24,7 +24,6 @@ function Sidebar(){
                 ))}
             </ul>
         </aside>
-        
         </>
     )
 

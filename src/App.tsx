@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import Sidebar from './components/Sidebar'
 import Topbar from './components/Topbar'
 
@@ -10,6 +11,7 @@ function App() {
       <Sidebar/>
       <main>
         <Topbar/>
+        <Footer/>
       </main>
 
     </div>
