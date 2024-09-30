@@ -20,6 +20,7 @@ import git from "../assets/svg/tech/git.svg";
 import github from "../assets/svg/tech/github.svg";
 import insomnia from "../assets/svg/tech/insomnia.svg";
 import npm from "../assets/svg/tech/npm.svg";
+import vite from "../assets/svg/tech/vite.svg";
 
 import java from "../assets/svg/tech/java.svg";
 import spring from "../assets/svg/tech/spring.svg";
@@ -120,6 +121,10 @@ export const techStack = [
       {
         tech: npm,
         name: "NPM",
+      },
+      {
+        tech: vite,
+        name: "Vite",
       },
     ],
   },
