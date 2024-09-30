@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar'
 import Topbar from './components/Topbar'
 import About from './views/About'
 import Contact from './views/Contact'
+import Experience from './views/Experience'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <div>
         <main>
           <Topbar/>
+          <Experience/>
           <About/>
           <Contact/>
         </main>

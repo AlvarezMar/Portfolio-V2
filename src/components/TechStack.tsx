@@ -4,7 +4,7 @@ function TechStack(){
 
     return (
         <>
-        <section className="flex flex-wrap justify-center gap-5 mx-10">
+        <section className="flex flex-wrap justify-center gap-5 mx-0">
 
             {techStack.map((tech) => (
                 <div key={tech.section}>

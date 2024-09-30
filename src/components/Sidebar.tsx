@@ -1,4 +1,4 @@
-import logo from "/logo.png"
+import logo from "/logoWhite.png"
 
 function Sidebar(){
 
@@ -17,7 +17,7 @@ function Sidebar(){
                 {navMenu.map((element) => (
                     <li key={element} className="text-[#AFAFAF] text-xl font-light" style={{writingMode:"vertical-rl", textOrientation:"mixed"}}>
                         <button 
-                            className= "px-3.5 py-4 border-r-2 border-primary hover:text-primary hover:border-accent hover:bg-[#d1cece] transition-colors">
+                            className= "px-3.5 py-4 border-r-2 border-primary hover:text-primary hover:border-accent hover:bg-[#e6e4e4] transition-colors">
                             {element}    
                         </button>
                     </li>
