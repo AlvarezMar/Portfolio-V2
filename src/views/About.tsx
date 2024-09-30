@@ -7,8 +7,8 @@ function About(){
         <section className="max-w-[1200px] mx-auto px-2">
             <div className="flex flex-col gap-4">
                 <div className="flex place-items-center">
-                    <h1 className="text-6xl font-bold">About<span className="text-accent">.</span></h1>
-                    <hr  className="w-full mx-5"/>
+                    <h1 className="text-6xl font-extrabold">About<span className="text-accent">.</span></h1>
+                    <hr  className="w-full mx-5 border-t-2"/>
                 </div>
 
                 <div className="flex flex-col gap-4 mx-5">
