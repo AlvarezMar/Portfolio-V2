@@ -4,7 +4,7 @@ function Topbar(){
 
     return (
         <>
-        <section className="flex place-items-center justify-between p-5 sticky">
+        <section className="flex place-items-center justify-between p-5 sticky top-0 backdrop-blur-md">
             <h2 className="text-[1.2rem] font-bold">Juan Carlos Alvarez</h2>
 
             <a href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank" 

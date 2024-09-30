@@ -6,7 +6,7 @@ function Sidebar(){
 
     return(
         <>
-        <aside className="bg-primary flex flex-col gap-2 items-center w-[60px] h-screen mr-auto sticky">
+        <aside className="bg-primary flex flex-col gap-2 items-center w-[60px] h-screen mr-auto sticky top-0">
             <div className="pt-5 pb-4">
                 <a href="#">
                     <img src={logo} alt="Juan Carlos's logo, full stack developer" width="40px"/>
