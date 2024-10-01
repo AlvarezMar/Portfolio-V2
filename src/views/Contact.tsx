@@ -13,7 +13,7 @@ function Contact(){
 
             <div className="mb-6">
                 <h1 className="text-8xl font-bold">Contact<span className="text-accent">.</span></h1>
-                <p className="text-lg max-w-[570px] mx-auto">Have an idea or question? Feel free to contact me via email or connect with me on <a href="" target="_blank" className="text-accent hover:underline">LinkedIn</a>. I'm always open to new opportunities!</p>
+                <p className="text-lg max-w-[570px] mx-auto">Have an idea or question? Feel free to contact me via email or connect with me on <a href="https://linkedin.com/in/alvarezmajuan" target="_blank" className="text-accent hover:underline">LinkedIn</a>. I'm always open to new opportunities!</p>
             </div>
 
             <div className="flex gap-2 items-center justify-center">

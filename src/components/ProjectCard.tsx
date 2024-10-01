@@ -1,12 +1,10 @@
 import ProjectTag from "./ProjectTag";
-import notFound from "../assets/images/notFound.png"
 
 import Code from "../assets/svg/elements/code.svg?react"
 import Link from "../assets/svg/elements/link.svg?react"
 
 function ProjectCard({project}){
     
-
     return (
         <>
         <div className="grid grid-cols-[2fr_1fr] gap-6 border-[3px] rounded-lg border-container p-9 w-[60rem]">
@@ -16,13 +14,13 @@ function ProjectCard({project}){
                     <h2 className="text-3xl font-semibold">{project.title}</h2>
 
                     <div className="flex gap-2">
-                        <button className="bg-primary rounded-md text-background p-2">
+                        <a href={project.repoUrl} target="_blank" className="bg-primary rounded-md text-background p-2 hover:scale-105 transition-all">
                             <Code className="w-[24px]"/>
-                        </button>
+                        </a>
 
-                        <button className="bg-primary rounded-md text-background p-2">
+                        <a href={project.url} target="_blank" className={`p-2 rounded-md ${project.url ? "bg-primary text-background hover:scale-105 transition-all" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default"}`}>
                             <Link className="w-[24px]"/>
-                        </button>
+                        </a>
                     </div>
 
                 </div>
@@ -30,7 +28,7 @@ function ProjectCard({project}){
 
                 <div className="flex gap-1">
                     {project.tecnologies.map((tech) => (
-                        <ProjectTag tecnologies={tech}/>
+                        <ProjectTag tecnologies={tech} key={tech}/>
                     ))}
                 </div>
 

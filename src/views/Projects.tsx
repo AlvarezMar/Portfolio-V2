@@ -40,7 +40,7 @@ function Projects(){
 
             <div className="flex flex-col place-items-center gap-5">
                 {projects.map((project) => (
-                    <ProjectCard project={project}/>
+                    <ProjectCard project={project} key={project.title}/>
                 ))}
             </div>
         </section>
