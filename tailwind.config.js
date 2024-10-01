@@ -14,7 +14,9 @@ export default {
         primary: '#323232',
         secondary: '#6B7280',
         accent: '#FFB552',
-        container: '#EEEEEE'
+        container: '#EEEEEE',
+        tag: '#E8DEFD',
+        tagText: '#8A5CF5'
       }
     },
   },
