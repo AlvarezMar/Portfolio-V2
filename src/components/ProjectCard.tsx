@@ -13,7 +13,7 @@ function ProjectCard({project}){
                 <div className="flex place-items-center justify-between">
                     <h2 className="text-3xl font-semibold">{project.title}</h2>
 
-                    <div className="flex gap-2">
+                    {/* <div className="flex gap-2">
                         <a href={project.repoUrl} target="_blank" className="bg-primary rounded-md text-background p-2 hover:scale-105 transition-all">
                             <Code className="w-[24px]"/>
                         </a>
@@ -21,7 +21,7 @@ function ProjectCard({project}){
                         <a href={project.url} target="_blank" className={`p-2 rounded-md ${project.url ? "bg-primary text-background hover:scale-105 transition-all" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default"}`}>
                             <Link className="w-[24px]"/>
                         </a>
-                    </div>
+                    </div> */}
 
                 </div>
                 <p className="mx-2 mb-3">{project.description}</p>
@@ -35,8 +35,18 @@ function ProjectCard({project}){
                 <span className="text-accent hover:underline mb-0 mt-auto">Learn more &#11166;</span>
             </div>
 
-            <div className="w-[22rem]">
+            <div className="w-[22rem] relative">
                 <img src={project.imgUrl} alt="" className="rounded-lg w-full h-auto object-cover object-top max-h-[244px]"/>
+
+                <div className="flex flex-col gap-2 absolute right-0 bottom-0 bg-background pt-2 pl-2 rounded-tl-xl">
+                        <a href={project.repoUrl} target="_blank" className="bg-primary rounded-md text-background p-2 hover:scale-105 transition-all">
+                            <Code className="w-[24px]"/>
+                        </a>
+
+                        <a href={project.url} target="_blank" className={`p-2 rounded-md ${project.url ? "bg-primary text-background hover:scale-105 transition-all" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default"}`}>
+                            <Link className="w-[24px]"/>
+                        </a>
+                    </div>
             </div>
 
         </div>

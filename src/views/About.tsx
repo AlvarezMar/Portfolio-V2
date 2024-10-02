@@ -20,7 +20,7 @@ function About(){
                         <p>I am a versatile software developer with a solid technical background and hands-on experience in programming and information technology. My experience in electromechanical maintenance has equipped me with meticulous attention to detail and exceptional problem-solving skills, which I now apply to software development projects.</p>
 
                     </div>
-                    <span className="font-bold">My current tech stack is:</span>
+                    <span className="font-bold mt-5">My current tech stack is:</span>
 
                     <TechStack/>
                 </div>
