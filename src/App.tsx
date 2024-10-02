@@ -5,6 +5,7 @@ import Topbar from './components/Topbar'
 import About from './views/About'
 import Contact from './views/Contact'
 import Experience from './views/Experience'
+import Home from './views/Home'
 import Projects from './views/Projects'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <div>
         <main>
           <Topbar/>
+          <Home/>
           <Experience/>
           <Projects/>
           <About/>
