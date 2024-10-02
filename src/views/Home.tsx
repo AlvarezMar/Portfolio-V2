@@ -3,9 +3,10 @@ import profilePicture from "../assets/images/profilePicture.webp"
 import { socials } from "../utils/socials";
 
 function Home(){
+    
     return (
         <>
-        <section className="max-w-[1200px] mx-auto grid grid-cols-[1fr_auto] place-items-center gap-10" id="Home">
+        <section className="max-w-[1200px] mx-auto grid grid-cols-[1fr_auto] place-items-center gap-10">
             <div className="text-end">
                 <h1 className="text-9xl font-[900] leading-[6.5rem] py-5">Fullstack Developer</h1>
                 <span className="text-3xl font-bold">Based in Mexico City.</span>                
@@ -21,11 +22,11 @@ function Home(){
                             </li>
                         ))}
                     </ul>
+
                     <hr className="w-full border-t-2" />
-
                 </div>
-
-                <button className="bg-primary text-background p-2.5 rounded-md hover:scale-105 transition-all mt-1">Contact me</button>
+                
+                <a href="#Contact" className="inline-block bg-primary text-background p-2.5 rounded-md mt-1 hover:scale-105 transition-all">Contact me</a>
             </div>
 
             <div>

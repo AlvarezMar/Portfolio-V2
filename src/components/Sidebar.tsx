@@ -13,7 +13,7 @@ function Sidebar(){
                 </a>
             </div>
 
-            <ul className="flex flex-col">
+            <ul className="flex flex-col" id="links">
                 {navMenu.map((element) => (
                     <li key={element} className="text-[#AFAFAF] text-xl font-light" style={{writingMode:"vertical-rl", textOrientation:"mixed"}}>
                         <a href={element == "Home" ? "#" : `#${element}`}
