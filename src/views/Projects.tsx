@@ -5,7 +5,7 @@ function Projects(){
 
     return (
         <>
-        <section className="max-w-[1200px] mx-auto px-2 sm:px-10">
+        <section className="max-w-[1200px] mx-auto px-2 sm:px-10" id="Projects">
             <div className="flex place-items-center mb-8">
                 <hr className="w-full mx-5 border-t-2"/>
                 <h1 className="text-6xl font-extrabold whitespace-nowrap">Projects<span className="text-accent">.</span></h1>
