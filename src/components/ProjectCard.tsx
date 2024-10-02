@@ -3,7 +3,13 @@ import ProjectTag from "./ProjectTag";
 import Code from "../assets/svg/elements/code.svg?react"
 import Link from "../assets/svg/elements/link.svg?react"
 
-function ProjectCard({project}){
+import { Project } from "../utils/projects";
+
+interface ProjectCardProps {
+    project: Project;
+}
+
+function ProjectCard({project}: ProjectCardProps){
     
     return (
         <>
@@ -46,11 +52,9 @@ function ProjectCard({project}){
                         <a href={project.url} target="_blank" className={`p-2 rounded-md ${project.url ? "bg-primary text-background hover:scale-105 transition-all" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default"}`}>
                             <Link className="w-[24px]"/>
                         </a>
-                    </div>
+                </div>
             </div>
-
         </div>
-
         </>
     )
 }
