@@ -14,11 +14,18 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #323232;
-  border: 3px solid rgb(248, 247, 243);
+  border: 3px solid #F8F7F3;
   border-radius: 5rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.dark{
+  ::-webkit-scrollbar-thumb{
+    background: #F8F7F3;
+    border: 3px solid #323232;
+  }
 }

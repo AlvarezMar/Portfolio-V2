@@ -16,7 +16,11 @@ export default {
         accent: '#FFB552',
         container: '#EEEEEE',
         tag: '#E8DEFD',
-        tagText: '#8A5CF5'
+        tagText: '#8A5CF5',
+
+        background_dark: '#1C1C1E',
+        primary_dark: '#E1E1E6',
+        container_dark: '#3A3A3A'
       }
     },
   },

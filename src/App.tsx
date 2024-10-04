@@ -12,6 +12,8 @@ import Projects from './views/Projects'
 
 function App() {
 
+  document.documentElement.classList.add('dark');
+
   useEffect(() => {
     const handleScroll = (e, targetId) => {
       e?.preventDefault();
