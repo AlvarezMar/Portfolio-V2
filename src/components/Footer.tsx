@@ -5,7 +5,7 @@ function Footer(){
 
     return (
         <>
-        <footer className="divide-y-2 divide-container p-2 max-w-[1200px] mx-auto">
+        <footer className="divide-y-2 dark:divide-hr_dark p-2 max-w-[1200px] mx-auto">
             <div className="flex justify-between py-4">
                 <div className="flex gap-10 place-items-center">
                     <a href="#">
@@ -35,7 +35,7 @@ function Footer(){
             </div>
 
             <div className="p-5">
-                <span className="text-[#c5c2c2]">&copy; 2024. Juan Carlos Alvarez | Portfolio V2.</span>
+                <span className="text-[#c5c2c2] dark:text-hr_dark">&copy; 2024. Juan Carlos Alvarez | Portfolio V2.</span>
             </div>
         </footer>
         </>

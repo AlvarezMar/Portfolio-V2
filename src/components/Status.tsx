@@ -9,14 +9,14 @@ function Status(){
             <div className='flex flex-col'>
                 <div className='group flex place-items-center'>
                     <img className="z-20" src={availability} alt="" width='60px'/>
-                    <div className='opacity-0 absolute z-10 bg-background py-3 px-5 rounded-r-full translate-x-3 group-hover:translate-x-[35%] group-hover:opacity-100 transition-all duration-300'>
+                    <div className='opacity-0 absolute z-10 bg-background dark:bg-background_dark py-3 px-5 rounded-r-full translate-x-3 group-hover:translate-x-[35%] group-hover:opacity-100 transition-all duration-300'>
                         <p className="whitespace-nowrap">Available to work</p>
                     </div>
 
                 </div>
                 <div className='group flex place-items-center'>
                     <img className="z-20" src={location} alt="" width='60px'/>
-                    <div className='opacity-0 absolute z-10 bg-background py-3 px-5 rounded-r-full translate-x-3 group-hover:translate-x-[35%] group-hover:opacity-100 transition-all duration-300'>
+                    <div className='opacity-0 absolute z-10 bg-background dark:bg-background_dark py-3 px-5 rounded-r-full translate-x-3 group-hover:translate-x-[35%] group-hover:opacity-100 transition-all duration-300'>
                         <p className="whitespace-nowrap">Open to relocate</p>
                     </div>
 

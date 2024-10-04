@@ -8,7 +8,7 @@ function About(){
             <div className="flex flex-col gap-4">
                 <div className="flex place-items-center mb-4">
                     <h1 className="text-6xl font-extrabold">About<span className="text-accent">.</span></h1>
-                    <hr  className="w-full mx-5 border-t-2"/>
+                    <hr  className="w-full mx-5 border-t-2 dark:border-hr_dark"/>
                 </div>
 
                 <div className="flex flex-col gap-4 mx-8">
@@ -20,7 +20,7 @@ function About(){
                         <p>I am a versatile software developer with a solid technical background and hands-on experience in programming and information technology. My experience in electromechanical maintenance has equipped me with meticulous attention to detail and exceptional problem-solving skills, which I now apply to software development projects.</p>
                     </div>
                     
-                    <span className="font-bold mt-5">My current tech stack is:</span>
+                    <span className="font-bold m-5">My current tech stack is:</span>
 
                     <TechStack/>
                 </div>

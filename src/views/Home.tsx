@@ -24,7 +24,7 @@ function Home(){
                         ))}
                     </ul>
 
-                    <hr className="w-full border-t-2" />
+                    <hr className="w-full border-t-2 dark:border-hr_dark"/>
                 </div>
                 
                 <a href="#Contact" className="inline-block bg-primary text-background p-2.5 rounded-md mt-1 hover:scale-105 transition-all">Contact me</a>

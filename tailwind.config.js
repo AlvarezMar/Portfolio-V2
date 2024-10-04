@@ -20,7 +20,9 @@ export default {
 
         background_dark: '#1C1C1E',
         primary_dark: '#E1E1E6',
-        container_dark: '#3A3A3A'
+        container_dark: '#2A2A2A',
+        tag_dark: '#2D2342',
+        hr_dark: "#3A3A3A"
       }
     },
   },
