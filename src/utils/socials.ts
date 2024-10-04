@@ -1,27 +1,27 @@
-import linkedin from "../assets/svg/socials/linkedin.svg?react";
-import github from "../assets/svg/socials/github.svg?react";
-import instagram from "../assets/svg/socials/instagram.svg?react";
-import email from "../assets/svg/socials/email.svg?react";
+import Linkedin from "../assets/svg/socials/linkedin.svg?react";
+import Github from "../assets/svg/socials/github.svg?react";
+import Instagram from "../assets/svg/socials/instagram.svg?react";
+import Email from "../assets/svg/socials/email.svg?react";
 
 export const socials = [
   {
     socialMedia: "LinkedIn",
-    imgSrc: linkedin,
+    imgSrc: Linkedin,
     link: "https://linkedin.com/in/alvarezmajuan",
   },
   {
     socialMedia: "Github",
-    imgSrc: github,
+    imgSrc: Github,
     link: "https://github.com/AlvarezMar",
   },
   {
     socialMedia: "Instagram",
-    imgSrc: instagram,
+    imgSrc: Instagram,
     link: "https://www.instagram.com/juan_alvarezmar/",
   },
   {
     socialMedia: "Email",
-    imgSrc: email,
+    imgSrc: Email,
     link: "mailto:alvarez.majuan@hotmail.com",
   },
 ];
