@@ -6,11 +6,11 @@ function Home(){
 
     return (
         <>
-        <section className="max-w-[1200px] mx-auto grid grid-cols-[1fr_auto] place-items-center gap-10">
+        <section className="max-w-[1200px] mx-auto px-2 grid grid-cols-[1fr_auto] place-items-center gap-9 h-screen pb-52">
             <div className="text-end">
                 <h1 translate="no" className="text-9xl font-[900] leading-[6.5rem] py-5">Fullstack Developer</h1>
                 <span className="text-3xl font-bold">Based in Mexico City.</span>                
-                <p className="ml-72 mt-1">Welcome to my portfolio that transcends time and space. Discover the artistry of code and innovation, crafted to create seamless digital experiences.</p>
+                <p className="ml-[17rem] mt-1">Welcome to my portfolio that transcends time and space. Discover the artistry of code and innovation, crafted to create seamless digital experiences.</p>
 
                 <div className="grid grid-cols-[auto_1fr] place-items-center gap-5">
                     <ul className="flex gap-5 ml-16">
