@@ -17,7 +17,7 @@ function ProjectCard({project}: ProjectCardProps){
 
             <div className="flex flex-col gap-3 pt-5">
                 <div className="flex place-items-center justify-between">
-                    <h2 className="text-3xl font-semibold">{project.title}</h2>
+                    <h2 translate="no" className="text-3xl font-semibold">{project.title}</h2>
 
                     {/* <div className="flex gap-2">
                         <a href={project.repoUrl} target="_blank" className="bg-primary rounded-md text-background p-2 hover:scale-105 transition-all">
@@ -38,7 +38,7 @@ function ProjectCard({project}: ProjectCardProps){
                     ))}
                 </div>
 
-                <span className="text-accent hover:underline mb-0 mt-auto">Learn more &#11166;</span>
+                <span className="text-accent hover:underline mb-0 mt-auto">Discover more &#11166;</span>
             </div>
 
             <div className="w-[22rem] relative">

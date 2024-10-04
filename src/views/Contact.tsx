@@ -18,7 +18,7 @@ function Contact(){
 
             <div className="flex gap-2 items-center justify-center">
                 <div className="bg-[#E5E5E5] text-[#AFAFAF] p-3 rounded-md max-w-96 w-full">
-                    <h2 className="text-start">alvarez.majuan@hotmail.com</h2>
+                    <h2 translate="no" className="text-start">alvarez.majuan@hotmail.com</h2>
                 </div>
                 <a href="" className="bg-primary text-background p-3 rounded-md hover:scale-105 transition-all">
                     <img src={send} alt="Send icon to send a new email" width="20px"/>
