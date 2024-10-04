@@ -1,4 +1,5 @@
 import profilePicture from "../assets/images/profilePicture.webp"
+import Status from "../components/Status";
 
 import { socials } from "../utils/socials";
 
@@ -29,8 +30,9 @@ function Home(){
                 <a href="#Contact" className="inline-block bg-primary text-background p-2.5 rounded-md mt-1 hover:scale-105 transition-all">Contact me</a>
             </div>
 
-            <div>
+            <div className="relative">
                 <img src={profilePicture} alt="Picture of Juan Carlos Alvarez"/>
+                <Status/>
             </div>
         </section>
         </>
