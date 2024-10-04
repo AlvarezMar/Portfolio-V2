@@ -18,7 +18,7 @@ function Home(){
                         {socials.map((link) => (
                             <li key={link.socialMedia}>
                                 <a href={link.link} target="_blank">
-                                    <img src={link.imgSrc} alt={`${link.socialMedia} icon linking to Juan Carlos's profile`} width="30px" className="hover:scale-110 transition-all"/>
+                                    <link.imgSrc width="30px" className="hover:scale-110 transition-all"/>
                                 </a>
                             </li>
                         ))}

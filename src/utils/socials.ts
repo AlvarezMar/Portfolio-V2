@@ -1,7 +1,7 @@
-import linkedin from "../assets/svg/socials/linkedin.svg";
-import github from "../assets/svg/socials/github.svg";
-import instagram from "../assets/svg/socials/instagram.svg";
-import email from "../assets/svg/socials/email.svg";
+import linkedin from "../assets/svg/socials/linkedin.svg?react";
+import github from "../assets/svg/socials/github.svg?react";
+import instagram from "../assets/svg/socials/instagram.svg?react";
+import email from "../assets/svg/socials/email.svg?react";
 
 export const socials = [
   {
