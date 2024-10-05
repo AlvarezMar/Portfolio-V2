@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 :root {
-  background-color: #F8F7F3;
   font-family: "Overpass";
 
-  color: #323232;
   /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +28,14 @@ html {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #323232;
+    background-color: #F8F7F3;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #E1E1E6;
+    background-color: #1C1C1E;
   }
 }
