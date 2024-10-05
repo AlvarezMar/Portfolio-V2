@@ -20,7 +20,7 @@ function Home(){
                         {socials.map((link) => (
                             <li key={link.socialMedia}>
                                 <a href={link.link} target="_blank">
-                                    <link.imgSrc width="30px" className="hover:scale-110 transition-all"/>
+                                    <link.imgSrc width="30px" className="hover:scale-110 transition-scale"/>
                                 </a>
                             </li>
                         ))}
@@ -30,7 +30,7 @@ function Home(){
                 </div>
                 
                 <a href="#Contact" className="inline-flex place-items-center gap-2 bg-primary text-background p-2.5 rounded-md mt-1 hover:scale-105 transition-all">Contact me
-                    <img src={send} alt="" width="20px" />
+                    <img src={send} alt="Send icon to send a new email" width="20px" />
                 </a>
             </div>
 

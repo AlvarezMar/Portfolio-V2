@@ -1,6 +1,27 @@
 import cv from "../assets/svg/elements/cv.svg"
-import settings from "../assets/svg/elements/settings.svg"
+import light from "../assets/svg/elements/light.svg"
+import dark from "../assets/svg/elements/dark.svg"
+import { useState } from "react"
 function Topbar(){
+
+    const [darkMode, setDarkMode] = useState(true);
+
+    const toggleTheme = () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        if(isDark){
+            document.documentElement.classList.remove('dark');
+            setDarkMode(false);
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            setDarkMode(true);
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    if(savedTheme === 'dark') document.documentElement.classList.add('dark');
+    else document.documentElement.classList.remove('dark');
 
     return (
         <>
@@ -14,8 +35,8 @@ function Topbar(){
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" width="20px"/>
                 </a>
 
-                <img src={settings} alt="" width="35px"/>
-
+                <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" width="35px" className="cursor-pointer"/>
+ 
             </div>
         </section>
         </>

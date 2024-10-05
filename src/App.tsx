@@ -12,17 +12,6 @@ import Projects from './views/Projects'
 
 function App() {
 
-  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-  const checkDarkMode = (e) => {
-    if(e.matches) document.documentElement.classList.add('dark')
-      else document.documentElement.classList.remove('dark')
-  }
-
-  checkDarkMode(mediaQuery);
-  mediaQuery.addEventListener('change', checkDarkMode)
-
-
   useEffect(() => {
     const handleScroll = (e, targetId) => {
       e?.preventDefault();
