@@ -20,7 +20,7 @@ function Contact(){
                 <div className="bg-[#E5E5E5] text-[#AFAFAF] p-3 rounded-md max-w-96 w-full">
                     <h2 translate="no" className="text-start">alvarez.majuan@hotmail.com</h2>
                 </div>
-                <a href="" className="bg-primary text-background p-3 rounded-md hover:scale-105 transition-all">
+                <a href="mailto:alvarez.majuan@hotmail.com" target="_blank" className="bg-primary text-background p-3 rounded-md hover:scale-105 transition-all">
                     <img src={send} alt="Send icon to send a new email" width="20px"/>
                 </a>
                 
