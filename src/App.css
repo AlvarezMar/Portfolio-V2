@@ -26,6 +26,6 @@
 .dark{
   ::-webkit-scrollbar-thumb{
     background: #F8F7F3;
-    border: 3px solid #323232;
+    border: 3px solid #1C1C1E;
   }
 }
