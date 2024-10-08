@@ -17,16 +17,24 @@ function ProjectDetail({project}: ProjectDetailProps){
                 <img src={project.imgUrl} alt="" className="w-full h-auto max-h-[420px] object-cover object-top"/>
             </div>
             <div className="flex flex-col gap-5 px-6 py-9">
-                <h1 className="text-4xl font-extrabold">{project.title}</h1>
-                <p>{project.description}</p>
+                <h1 translate="no" className="text-4xl font-extrabold">{project.title}</h1>
+                <p>{project.previewDescription}</p>
 
-                <div className="flex gap-1">
+                <hr className="mx-10 border-t-2 dark:border-hr_dark"/>
+
+                <div className="flex flex-col gap-5">
+                    {project.fullDescription.map((paragraph) => (
+                        <p>{paragraph}</p>
+                    ))}
+                </div>
+
+                <div className="flex flex-wrap gap-1">
                     {project.tecnologies.map((tech) => (
                         <ProjectTag tecnologies={tech} key={tech}/>
                     ))}
                 </div>
 
-                <div className="flex flex-col mt-10 gap-1">
+                <div className="flex flex-col mt-5 gap-1">
                     <h2 className="text-2xl font-bold mb-2">Project Links<span className="text-accent">.</span></h2>
                     <div className="flex gap-3">
                         <a href={project.repoUrl} target="_blank" className="inline-flex place-items-center gap-2 text-nowrap bg-primary text-background p-2.5 rounded-md transition-all hover:scale-105">Source Code

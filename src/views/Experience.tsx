@@ -12,6 +12,17 @@ function Experience(){
 
             <div className="mx-8 lg:mx-10">
                 <Timeline className="transition-colors duration-300">
+                <Timeline.Item className="transition-colors duration-300">
+                        <Timeline.Point className="point"/> 
+                        <Timeline.Content>
+                            <Timeline.Time className="text-secondary">October 2024</Timeline.Time>
+                            <Timeline.Title className="text-xl text-primary transition-colors duration-300">Associate Engineer/ Frontend Developer. HCLTech.</Timeline.Title>
+                            <Timeline.Body className="text-primary transition-colors duration-300">
+                                We'll see. &#128561;
+                            </Timeline.Body>
+                        </Timeline.Content>
+                    </Timeline.Item>
+
                     <Timeline.Item className="transition-colors duration-300">
                         <Timeline.Point className="point"/> 
                         <Timeline.Content>
