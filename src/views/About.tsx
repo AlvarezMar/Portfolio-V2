@@ -14,7 +14,7 @@ function About(){
                 <div className="flex flex-col gap-4 mx-8">
                     <h2 className="text-2xl">Hey! I'm <span className="text-accent">Juan Carlos Alvarez Martínez</span>...</h2>
 
-                    <div className="flex flex-col gap-4 dark:text-secondary">
+                    <div className="flex flex-col gap-4 text-secondary dark:text-secondary_dark">
                         <p>A passionate software developer who loves turning complex problems into simple, elegant solutions. My journey in the tech world is driven by curiosity, creativity, and a constant desire to learn and grow.</p>
 
                         <p>I am a versatile software developer with a solid technical background and hands-on experience in programming and information technology. My experience in electromechanical maintenance has equipped me with meticulous attention to detail and exceptional problem-solving skills, which I now apply to software development projects.</p>

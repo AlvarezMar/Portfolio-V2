@@ -18,11 +18,11 @@ function ProjectDetail({project}: ProjectDetailProps){
             </div>
             <div className="flex flex-col gap-5 px-6 py-9">
                 <h1 translate="no" className="text-4xl font-extrabold">{project.title}</h1>
-                <p>{project.previewDescription}</p>
+                <p className="text-secondary dark:text-secondary_dark">{project.previewDescription}</p>
 
                 <hr className="mx-10 border-t-2 dark:border-hr_dark"/>
 
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-5 text-secondary dark:text-secondary_dark">
                     {project.fullDescription.map((paragraph) => (
                         <p>{paragraph}</p>
                     ))}
