@@ -1,4 +1,6 @@
 import { socials } from "../utils/socials";
+import { Tooltip } from "react-tooltip";
+
 import logo from "/logo.png"
 
 function Footer(){
@@ -26,7 +28,7 @@ function Footer(){
                 <ul className="flex gap-5">
                     {socials.map((link) => (
                         <li key={link.socialMedia}>
-                            <a href={link.link} target="_blank">
+                            <a href={link.link} target="_blank" data-tooltip-id={`_${link.socialMedia}`}>
                                 <link.imgSrc width="24px" className="hover:scale-110 transition-scale"/>
                             </a>
                         </li>
@@ -40,6 +42,10 @@ function Footer(){
                 <span className="text-[#c5c2c2] dark:text-hr_dark">&copy; 2024. Juan Carlos Alvarez | Portfolio V2.</span>
             </div>
         </footer>
+
+        {socials.map((link) => (
+            <Tooltip id={`_${link.socialMedia}`} key={`_${link.socialMedia}`} content={link.socialMedia} place="bottom-end" opacity="1" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
+        ))}
         </>
     )
 }

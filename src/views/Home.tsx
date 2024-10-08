@@ -1,9 +1,9 @@
-import profilePicture from "../assets/images/profilePicture.webp"
-import Status from "../components/Status";
-
-import send from "../assets/svg/elements/send.svg"
-
 import { socials } from "../utils/socials";
+import { Tooltip } from "react-tooltip";
+
+import Status from "../components/Status";
+import send from "../assets/svg/elements/send.svg"
+import profilePicture from "../assets/images/profilePicture.webp"
 
 function Home(){
 
@@ -12,14 +12,14 @@ function Home(){
         <section className="max-w-[1200px] mx-auto px-2 grid grid-cols-[1fr_auto] place-items-center gap-9 h-screen pb-52">
             <div className="text-end">
                 <h1 translate="no" className="text-9xl font-[900] leading-[6.5rem] py-5">Fullstack Developer</h1>
-                <span className="text-3xl font-bold">Based in Mexico City.</span>                
+                <span className="text-3xl font-bold">Based in <span className="text-accent">Mexico City.</span></span>                
                 <p className="ml-[17rem] mt-1">Welcome to my portfolio that transcends time and space. Discover the artistry of code and innovation, crafted to create seamless digital experiences.</p>
 
                 <div className="grid grid-cols-[auto_1fr] place-items-center gap-5">
                     <ul className="flex gap-5 ml-16">
                         {socials.map((link) => (
                             <li key={link.socialMedia}>
-                                <a href={link.link} target="_blank">
+                                <a href={link.link} target="_blank" data-tooltip-id={link.socialMedia}>
                                     <link.imgSrc width="30px" className="hover:scale-110 transition-scale"/>
                                 </a>
                             </li>
@@ -39,6 +39,10 @@ function Home(){
                 <Status/>
             </div>
         </section>
+
+        {socials.map((link) => (
+            <Tooltip id={link.socialMedia} key={link.socialMedia} content={link.socialMedia} offset={15} opacity="1" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
+        ))}
         </>
     )
 }

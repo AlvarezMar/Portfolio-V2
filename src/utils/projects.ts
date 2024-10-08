@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "Vercel",
     ],
     imgUrl:
-      "https://res.cloudinary.com/dwhmcn88z/image/upload/v1724203034/youDrive_dw21hi.png",
+      "https://res.cloudinary.com/dwhmcn88z/image/upload/v1728411194/driveshot_lmkvau.png",
     repoUrl: "https://github.com/maccari78/PM6-grupo3",
     url: "https://youdrive.vercel.app/",
   },
@@ -55,7 +55,7 @@ export const projects: Project[] = [
       "Nodemon",
     ],
     imgUrl:
-      "https://res.cloudinary.com/dwhmcn88z/image/upload/v1724203128/Do%C3%B1a_Diabla_v1_fkav1i.png",
+      "https://res.cloudinary.com/dwhmcn88z/image/upload/v1728411192/diablashot_dmvw2a.png",
     repoUrl: "https://github.com/AlvarezMar/Dona-Diabla",
     url: "",
   },
@@ -76,7 +76,7 @@ export const projects: Project[] = [
       "Nodemon",
     ],
     imgUrl:
-      "https://res.cloudinary.com/dwhmcn88z/image/upload/v1724203131/MovLoom_v1_xwayle.png",
+      "https://res.cloudinary.com/dwhmcn88z/image/upload/v1728411197/movshot_d6emh4.png",
     repoUrl: "https://github.com/AlvarezMar/MovLoom",
     url: "",
   },
