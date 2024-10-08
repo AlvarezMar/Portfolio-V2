@@ -1,7 +1,11 @@
+import { useState } from "react"
+import { Tooltip } from "react-tooltip"
+
 import cv from "../assets/svg/elements/cv.svg"
 import light from "../assets/svg/elements/light.svg"
 import dark from "../assets/svg/elements/dark.svg"
-import { useState } from "react"
+
+
 function Topbar(){
 
     const [darkMode, setDarkMode] = useState(true);
@@ -35,10 +39,12 @@ function Topbar(){
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" width="20px"/>
                 </a>
 
-                <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" width="35px" className="cursor-pointer"/>
+                <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" width="35px" className="cursor-pointer" data-tooltip-id="darkMode"/>
  
             </div>
         </section>
+
+        <Tooltip id="darkMode" content={darkMode ? "Light Mode" : "Dark Mode"} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
         </>
     )
 }

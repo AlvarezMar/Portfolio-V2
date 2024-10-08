@@ -1,10 +1,16 @@
+import { useState } from "react"
+import { Tooltip } from "react-tooltip"
+
 import copy from "../assets/svg/elements/copy.svg"
 import send from "../assets/svg/elements/send.svg"
 
 function Contact(){
 
+    const [copiedToClipboard, setCopiedToClipboard] = useState("Copy Email")
+
     const copyToClipboard = () => {
         navigator.clipboard.writeText("alvarez.majuan@hotmail.com")
+        setCopiedToClipboard("Copied to Clipboard! 💛")
     }
 
     return (
@@ -20,17 +26,20 @@ function Contact(){
                 <div className="bg-[#E5E5E5] text-[#AFAFAF] p-3 rounded-md max-w-96 w-full">
                     <h2 translate="no" className="text-start">alvarez.majuan@hotmail.com</h2>
                 </div>
-                <a href="mailto:alvarez.majuan@hotmail.com" target="_blank" className="bg-primary text-background p-3 rounded-md hover:scale-110 transition-all">
+                <a href="mailto:alvarez.majuan@hotmail.com" target="_blank" data-tooltip-id="sendEmail" className="bg-primary text-background p-3 rounded-md hover:scale-110 transition-all">
                     <img src={send} alt="Send icon to send a new email" width="20px"/>
                 </a>
                 
-                <button onClick={copyToClipboard} className="bg-primary text-background p-3 rounded-md hover:scale-110 transition-all">
+                <button onClick={copyToClipboard} data-tooltip-id="copyEmail" className="bg-primary text-background p-3 rounded-md hover:scale-110 transition-all">
                     <img src={copy} alt="Copy icon to copy Juan Carlos's email to clipboard" width="20px"/>
                 </button>
             </div>
 
 
         </section>
+
+        <Tooltip id="sendEmail" content="Send Email" opacity="1"place="top" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
+        <Tooltip id="copyEmail" content={copiedToClipboard} opacity="1"place="top" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
         </>
     )
 }
