@@ -8,7 +8,11 @@ import dark from "../assets/svg/elements/dark.svg"
 
 function Topbar(){
 
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedMode = localStorage.getItem("theme")
+        if(savedMode === 'dark') return true
+        return false
+    });
 
     const toggleTheme = () => {
         const isDark = document.documentElement.classList.contains('dark');
