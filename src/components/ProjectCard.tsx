@@ -20,7 +20,7 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
             <div className="flex flex-col gap-3 pt-5">
                 <h3 translate="no" className="text-3xl font-semibold transition-colors duration-75">{project.title}</h3>
       
-                <h3 className="mx-2 mb-3 duration-75">{project.previewDescription}</h3>
+                <h3 className="mx-2 mb-3 duration-75 dark:text-secondary">{project.previewDescription}</h3>
 
                 <div className="flex flex-wrap gap-1">
                     {project.tecnologies.map((tech) => (

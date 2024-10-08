@@ -12,7 +12,8 @@ export default {
       colors: {
         background: '#F8F7F3',
         primary: '#323232',
-        secondary: '#6B7280',
+        secondary: '#9CA3AF',
+        tertiary: '#6B7280',
         accent: '#FFB552',
         container: '#EEEEEE',
         tag: '#E8DEFD',
