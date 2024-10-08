@@ -6,7 +6,6 @@ import ProjectDetail from "../components/ProjectDetail";
 
 import close from "../assets/svg/elements/close.svg"
 
-
 function Projects(){
 
     const [selectedProject, setSelectedProject] = useState<Project | null>(null)
@@ -37,20 +36,14 @@ function Projects(){
         </section>
 
         {selectedProject && (
-            <div>
-                <div onClick={handleCloseModal} className="fixed inset-0 backdrop-blur-md bg-black bg-opacity-20 z-50 overflow-y-auto">
-                    <div className="flex justify-center mt-20 m-10 gap-2">
+                <div className="fixed inset-0 backdrop-blur-md bg-black bg-opacity-20 z-50 overflow-y-auto">
+                    <div onClick={handleCloseModal} className="flex justify-center mt-16 m-10 gap-2">
                         <ProjectDetail project={selectedProject}/>
-                        <div onClick={() => {handleCloseModal()}} className="flex cursor-pointer bg-primary rounded-full transition-all hover:scale-110 p-2 w-8 h-8 mt-1">
+                        <div className="flex cursor-pointer bg-primary rounded-full transition-all hover:scale-110 p-2 w-8 h-8">
                             <img src={close} alt="" width="20px"/>
                         </div>
                     </div>
-
                 </div>
-
-            </div>
-            
-            
         )}
         </>
     )

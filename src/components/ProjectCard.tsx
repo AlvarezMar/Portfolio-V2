@@ -31,17 +31,17 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
                 <span onClick={() => onOpenModal(project)} className="text-accent hover:underline mb-0 mt-2 cursor-pointer">Discover more &#11166;</span>
             </div>
 
-            <div className="w-[22rem] h-[245px] relative">
-                <img src={project.imgUrl} alt="" onClick={() => onOpenModal(project)} className="rounded-lg w-full h-auto object-cover object-top max-h-[245px] cursor-pointer"/>
+            <div className="w-[22rem] h-[245px] rounded-lg overflow-hidden relative">
+                <img src={project.imgUrl} alt="" onClick={() => onOpenModal(project)} className="w-full h-auto object-cover object-top max-h-[245px] cursor-pointer"/>
 
                 <div className="flex flex-col gap-2 absolute right-0 bottom-0 bg-background dark:bg-background_dark pt-2 pl-2 rounded-tl-xl transition-colors duration-[.3s]">
-                        <a href={project.repoUrl} target="_blank" data-tooltip-id="code" className="bg-primary rounded-md text-background p-2 hover:scale-110 transition-all">
-                            <Code className="w-[24px]"/>
-                        </a>
+                    <a href={project.repoUrl} target="_blank" data-tooltip-id="code" className="bg-primary rounded-md text-background p-2 hover:scale-110 transition-all">
+                        <Code className="w-[24px]"/>
+                    </a>
 
-                        <a href={project.url} target="_blank" data-tooltip-id="link" className={`p-2 rounded-md ${project.url ? "bg-primary text-background hover:scale-110 transition-all" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default pointer-events-none"}`}>
-                            <Link className="w-[24px]"/>
-                        </a>
+                    <a href={project.url} target="_blank" data-tooltip-id="link" className={`p-2 rounded-md hover:scale-110 transition-all ${project.url ? "bg-primary text-background" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default pointer-events-none"}`}>
+                        <Link className="w-[24px]"/>
+                    </a>
                 </div>
             </div>
         </div>
