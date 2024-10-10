@@ -64,8 +64,8 @@ function App() {
       <div>
         <main>
           <Topbar/>
-          {/* <Home/>
-          <Experience/> */}
+          {/* <Home/> */}
+          <Experience/>
           <Projects/>
           <About/>
           <Contact/>
