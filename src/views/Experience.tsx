@@ -15,7 +15,7 @@ function Experience(){
                 <Timeline className="transition-colors duration-300">
 
                     {experience.map((job) => (
-                        <Timeline.Item className="transition-colors duration-300">
+                        <Timeline.Item className="transition-colors duration-300" key={job.positionAndCompany}>
                             <Timeline.Point className="point"/> 
                             <Timeline.Content>
                                 <Timeline.Time className="text-tertiary">{job.date}</Timeline.Time>

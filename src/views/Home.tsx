@@ -9,11 +9,11 @@ function Home(){
 
     return (
         <>
-        <section className="max-w-[1200px] mx-auto px-2 grid grid-cols-[1fr_auto] place-items-center gap-9 h-screen pb-52">
-            <div className="text-end">
+        <section className="max-w-[1200px] mx-auto px-2 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_auto] place-items-center gap-9 h-screen pb-52">
+            <div className="lg:text-end">
                 <h1 translate="no" className="text-9xl font-[900] leading-[6.5rem] py-5">Fullstack Developer</h1>
                 <span className="text-3xl font-bold">Based in <span className="text-accent">Mexico City.</span></span>                
-                <p className="ml-[17rem] mt-1 text-secondary dark:text-secondary_dark">Welcome to my portfolio that transcends time and space. Discover the artistry of code and innovation, crafted to create seamless digital experiences.</p>
+                <p className="lg:ml-[17rem] mt-1 text-secondary dark:text-secondary_dark">Welcome to my portfolio that transcends time and space. Discover the artistry of code and innovation, crafted to create seamless digital experiences.</p>
 
                 <div className="grid grid-cols-[auto_1fr] place-items-center gap-5">
                     <ul className="flex gap-5 ml-16">

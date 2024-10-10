@@ -23,8 +23,8 @@ function ProjectDetail({project}: ProjectDetailProps){
                 <hr className="mx-10 border-t-2 dark:border-hr_dark"/>
 
                 <div className="flex flex-col gap-5 text-secondary dark:text-secondary_dark">
-                    {project.fullDescription.map((paragraph) => (
-                        <p>{paragraph}</p>
+                    {project.fullDescription.map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
                     ))}
                 </div>
 

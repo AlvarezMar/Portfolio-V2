@@ -64,13 +64,9 @@ function App() {
       <div>
         <main>
           <Topbar/>
-          <Home/>
-          <Experience/>
-          <Projects/>
-          <About/>
-          <Contact/>
+
         </main>
-          <Footer/>
+         <Footer/>
       </div>
 
     </div>

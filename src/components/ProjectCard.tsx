@@ -15,7 +15,7 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
     
     return (
         <>
-        <div className="grid grid-cols-[2fr_1fr] items-center gap-6 border-[3px] rounded-lg border-container dark:border-container_dark p-9 w-[60rem]">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-[2fr_1fr] items-center gap-6 border-[3px] rounded-lg border-container dark:border-container_dark p-9 max-w-[60rem]">
 
             <div className="flex flex-col gap-3 pt-5">
                 <h3 translate="no" className="text-3xl font-semibold transition-colors duration-75">{project.title}</h3>
