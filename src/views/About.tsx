@@ -11,7 +11,7 @@ function About(){
                     <hr  className="w-full mx-5 border-t-2 dark:border-hr_dark"/>
                 </div>
 
-                <div className="flex flex-col gap-4 mx-8">
+                <div className="flex flex-col gap-4 lg:mx-8">
                     <h2 className="text-2xl">Hey! I'm <span className="text-accent">Juan Carlos Alvarez Martínez</span>...</h2>
 
                     <div className="flex flex-col gap-4 text-secondary dark:text-secondary_dark">
