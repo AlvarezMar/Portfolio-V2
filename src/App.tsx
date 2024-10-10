@@ -13,14 +13,14 @@ import Projects from './views/Projects'
 function App() {
 
   useEffect(() => {
-    const handleScroll = (e, targetId) => {
+    const handleScroll = (e: Event, targetId: string) => {
       e?.preventDefault();
       
       const targetElement = document.getElementById(targetId);
   
       if (!targetElement) return;
   
-      const navHeight = document.getElementById('topbar').offsetHeight;
+      const navHeight = document.getElementById('topbar')?.offsetHeight || 0;
       const targetPosition = targetElement.offsetTop - navHeight;
   
       window.scrollTo({
@@ -30,8 +30,10 @@ function App() {
       history.pushState(null, '', `#${targetId}`);
     };
   
-    const handleAnchorClick = (e) => {
-      const targetId = e.currentTarget.getAttribute('href').substring(1);
+    const handleAnchorClick = (e: Event) => {
+      e.preventDefault();
+
+      const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute('href')?.substring(1) || '';
   
       if (targetId === '') {
         e.preventDefault();
