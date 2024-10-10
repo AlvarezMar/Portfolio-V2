@@ -63,10 +63,14 @@ function App() {
       <Sidebar/>
       <div>
         <main>
-          <Topbar/>
-
+          {/* <Topbar/>
+          <Home/>
+          <Experience/>
+          <Projects/> */}
+          <About/>
+          <Contact/>
         </main>
-         <Footer/>
+          <Footer/>
       </div>
 
     </div>
