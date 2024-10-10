@@ -8,13 +8,13 @@ function Footer(){
     return (
         <>
         <footer className="p-2 max-w-[1200px] mx-auto transition-colors">
-            <div className="flex justify-between py-4">
-                <div className="flex gap-10 place-items-center">
+            <div className="flex justify-between py-2 lg:py-4">
+                <div className="flex gap-3 lg:gap-10 place-items-center">
                     <a href="#">
-                        <img src={logo} alt="Juan Carlos's logo, full stack developer" width="34px"/>
+                        <img src={logo} alt="Juan Carlos's logo, full stack developer" className="w-[24px] lg:w-[34px]"/>
                     </a>
 
-                    <ul className="flex font-bold gap-6">
+                    <ul className="flex font-bold gap-3 lg:gap-6 text-sm lg:text-base">
                         <li className="hover:text-accent">
                             <a className="duration-150" href="#">Home</a>
                         </li>
@@ -25,11 +25,11 @@ function Footer(){
                     </ul>
                 </div>
                 
-                <ul className="flex gap-5">
+                <ul className="flex gap-3 lg:gap-5">
                     {socials.map((link) => (
                         <li key={link.socialMedia}>
                             <a href={link.link} target="_blank" data-tooltip-id={`_${link.socialMedia}`}>
-                                <link.imgSrc width="24px" className="hover:scale-110 transition-scale"/>
+                                <link.imgSrc className="hover:scale-110 transition-scale w-[20px] lg:w-[24px]"/>
                             </a>
                         </li>
                     ))}
@@ -38,8 +38,8 @@ function Footer(){
 
             <hr className="w-full border-t-2 dark:border-hr_dark"/>
 
-            <div className="p-5 text-end">
-                <span className="text-[#c5c2c2] dark:text-hr_dark">&copy; 2024. Juan Carlos Alvarez | Portfolio V2.</span>
+            <div className="p-2 lg:p-5 lg:text-end">
+                <span className="text-[#c5c2c2] dark:text-hr_dark text-sm lg:text-base">&copy; 2024. Juan Carlos Alvarez | Portfolio V2.</span>
             </div>
         </footer>
 
