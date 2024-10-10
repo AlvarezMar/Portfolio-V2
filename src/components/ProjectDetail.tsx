@@ -12,7 +12,7 @@ function ProjectDetail({project}: ProjectDetailProps){
 
     return (
         <>
-        <section onClick={(e) => e.stopPropagation()} className="max-w-[700px] flex flex-col rounded-xl overflow-hidden bg-background dark:bg-background_dark mt-8">
+        <section onClick={(e) => e.stopPropagation()} className="max-w-[700px] flex flex-col rounded-xl overflow-hidden bg-background dark:bg-background_dark lg:mt-8">
             <div>
                 <img src={project.imgUrl} alt="" className="w-full h-auto max-h-[420px] object-cover object-top"/>
             </div>

@@ -15,7 +15,7 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
     
     return (
         <>
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-[2fr_1fr] items-center gap-6 border-[3px] rounded-lg border-container dark:border-container_dark p-9 max-w-[60rem]">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-[2fr_1fr] items-center gap-6 border-[3px] rounded-lg border-container dark:border-container_dark p-4 lg:p-9 max-w-[60rem]">
 
             <div className="flex flex-col gap-3 pt-5">
                 <h3 translate="no" className="text-3xl font-semibold transition-colors duration-75">{project.title}</h3>
@@ -28,10 +28,10 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
                     ))}
                 </div>
 
-                <span onClick={() => onOpenModal(project)} className="text-accent hover:underline mb-0 mt-2 cursor-pointer">Discover more &#11166;</span>
+                <span onClick={() => onOpenModal(project)} className="text-accent hover:underline mb-0 mt-7 lg:mt-2 cursor-pointer">Discover more &#11166;</span>
             </div>
 
-            <div className="w-[22rem] h-[245px] rounded-lg overflow-hidden relative">
+            <div className="lg:w-[22rem] lg:h-[245px] rounded-lg overflow-hidden relative">
                 <img src={project.imgUrl} alt="" onClick={() => onOpenModal(project)} className="w-full h-auto object-cover object-top max-h-[245px] cursor-pointer transition-all hover:scale-110"/>
 
                 <div className="flex flex-col gap-2 absolute right-0 bottom-0 bg-background dark:bg-background_dark pt-2 pl-2 rounded-tl-xl transition-colors duration-[.3s]">
