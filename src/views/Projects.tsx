@@ -37,7 +37,7 @@ function Projects(){
 
         {selectedProject && (
                 <div className="fixed inset-0 backdrop-blur-md bg-black bg-opacity-20 z-50 overflow-y-auto">
-                    <div onClick={handleCloseModal} className="flex flex-col-reverse lg:flex-row justify-center mb-7 lg:mb-0 lg:mt-16 m-2 lg:m-10 gap-2 lg:gap-1">
+                    <div onClick={handleCloseModal} className="flex flex-col-reverse lg:flex-row justify-center mb-7 lg:mb-0 mx-3 lg:mt-16 m-2 lg:m-10 gap-2 lg:gap-1">
                         <ProjectDetail project={selectedProject}/>
                         <div className="flex cursor-pointer bg-primary rounded-full transition-all hover:scale-110 p-2 w-7 h-7 mr-0 ml-auto lg:mr-0 lg:ml-0">
                             <img src={close} alt="" width="20px"/>

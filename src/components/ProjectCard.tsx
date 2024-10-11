@@ -34,7 +34,7 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
             <div className="lg:w-[22rem] lg:h-[245px] rounded-lg overflow-hidden relative">
                 <img src={project.imgUrl} alt="" onClick={() => onOpenModal(project)} className="w-full h-auto object-cover object-top max-h-[245px] cursor-pointer transition-all hover:scale-110"/>
 
-                <div className="flex flex-col gap-2 absolute right-0 bottom-0 bg-background dark:bg-background_dark pt-2 pl-2 rounded-tl-xl transition-colors duration-[.3s]">
+                <div className="flex flex-col gap-2 border-shape-left border-shape-top absolute right-0 bottom-0 bg-background dark:bg-background_dark pt-2 pl-2 rounded-tl-xl transition-colors duration-[.3s]">
                     <a href={project.repoUrl} target="_blank" data-tooltip-id="code" className="bg-primary rounded-md text-background p-2 hover:scale-110 transition-all">
                         <Code className="w-[24px]"/>
                     </a>

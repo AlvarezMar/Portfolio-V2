@@ -6,14 +6,14 @@ function Sidebar(){
 
     return(
         <>
-        <aside className="bg-primary flex flex-col gap-2 items-center w-[45px] lg:w-[60px] h-screen mr-auto sticky top-0 rounded-tr-3xl">
-            <div className="pt-5 pb-4">
+        <aside className="bg-primary flex flex-col gap-2 items-center w-[45px] lg:w-[60px] h-min mr-auto sticky top-0 rounded-r-3xl z-20 overflow-hidden">
+            <div className="pt-5">
                 <a href="#">
                     <img src={logo} alt="Juan Carlos's logo, full stack developer" className="w-[30px] lg:w-[40px]"/>
                 </a>
             </div>
 
-            <ul className="flex flex-col" id="links">
+            <ul className="flex flex-col pt-5 pb-36" id="links">
                 {navMenu.map((element) => (
                     <li key={element} className="text-[#AFAFAF] lg:text-xl font-light" style={{writingMode:"vertical-rl", textOrientation:"mixed"}}>
                         <a href={element == "Home" ? "#" : `#${element}`}
@@ -24,6 +24,9 @@ function Sidebar(){
                 ))}
             </ul>
         </aside>
+
+        <div className="bg-primary fixed border-sidebar top-0 mr-auto h-screen p-3.5 inverted">
+        </div>
         </>
     )
 

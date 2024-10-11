@@ -39,7 +39,7 @@ function Contact(){
         </section>
 
         <Tooltip id="sendEmail" content="Send Email" opacity="1"place="top" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
-        <Tooltip id="copyEmail" content={copiedToClipboard} opacity="1"place="top" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
+        <Tooltip id="copyEmail" content={copiedToClipboard} opacity="1" place="top-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
         </>
     )
 }

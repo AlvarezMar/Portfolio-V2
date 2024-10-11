@@ -33,7 +33,7 @@ function Topbar(){
 
     return (
         <>
-        <section className="flex place-items-center justify-between p-2.5 lg:p-5 sticky top-0 backdrop-blur-md z-50" id="topbar">
+        <section className="flex place-items-center justify-between p-2.5 lg:p-5 sticky top-0 backdrop-blur-sm lg:backdrop-blur-md z-50" id="topbar">
             <h2 className="lg:text-[1.2rem] font-bold">Juan Carlos Alvarez</h2>
 
             <div className="flex gap-3">

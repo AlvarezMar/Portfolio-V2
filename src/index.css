@@ -7,6 +7,8 @@
 
   background-color: #F8F7F3;
   color: #323232;
+  color-scheme: light dark;
+  --border-color: #F8F7F3;
 
   /* font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,6 +38,8 @@ hr, .border-container {
 .dark {
   background-color: #1C1C1E;
   color: #E1E1E6;
+  color-scheme: dark;
+  --border-color: #1C1C1E;
 }
 
 .transition-scale{
@@ -45,4 +49,48 @@ hr, .border-container {
 .point div{
   background-color: #FFB552 !important;
   transition: ease .3s;
+}
+
+.border-shape-left::before{
+  content: "";
+  position: absolute;
+  width: 30px; 
+  height: 30px; 
+  border-bottom-right-radius: 40%;
+  background-color: transparent;
+  bottom: 0;
+  right: 2.96rem; 
+  z-index: 1; 
+  box-shadow: 0px 20px 0 var(--border-color);
+  transition: ease .3s;
+}
+
+.border-shape-top::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px; 
+  border-bottom-right-radius: 40%;
+  background-color: transparent;
+  bottom: 6rem;
+  right: 0;
+  z-index: 1;
+  box-shadow: 10px 0px 0 var(--border-color);
+  transition: ease .3s;
+}
+
+@media (min-width:680px) {
+
+  .border-sidebar::before{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    background-color: transparent;
+    top: 46.1rem;
+    left: 1.75rem;
+    box-shadow: -15px 0px #323232;
+  }
 }
