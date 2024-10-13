@@ -4,7 +4,7 @@ function About(){
 
     return (
         <>
-        <section className="max-w-[1200px] mx-auto px-2 sm:px-10" id="About">
+        <section className="max-w-[1200px] mx-auto px-4 sm:px-10" id="About">
             <div className="flex flex-col gap-4">
                 <div className="flex place-items-center mb-4">
                     <h1 className="text-6xl font-extrabold">About<span className="text-accent">.</span></h1>

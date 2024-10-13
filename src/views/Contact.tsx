@@ -15,7 +15,7 @@ function Contact(){
 
     return (
         <>
-        <section className="max-w-[1200px] mx-auto text-center px-2 my-64" id="Contact">
+        <section className="max-w-[1200px] mx-auto text-center px-4 my-64" id="Contact">
 
             <div className="mb-6">
                 <h1 className="text-7xl lg:text-8xl font-bold">Contact<span className="text-accent">.</span></h1>
