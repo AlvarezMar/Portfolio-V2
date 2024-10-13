@@ -6,7 +6,7 @@ function Sidebar(){
 
     const { t } = useTranslation();
 
-    const navMenu = t('translation.sidebar_menu', {returnObjects: true}) as string[];
+    const navMenu = t('menusAndHome.menu', {returnObjects: true}) as string[];
     
     return(
         <>

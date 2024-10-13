@@ -42,7 +42,7 @@ function Topbar(){
             <div className="flex gap-3">
                 <a href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank" 
                 className="flex place-items-center gap-2 bg-primary text-background p-2 lg:p-3 rounded-xl hover:scale-105 transition-all">
-                    <span className="hidden lg:inline">{t('translation.cv_button')}</span>
+                    <span className="hidden lg:inline">{t('menusAndHome.cv_button')}</span>
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" className="w-[18px] lg:w-[20px]"/>
                 </a>
 
@@ -51,7 +51,7 @@ function Topbar(){
             </div>
         </section>
 
-        <Tooltip id="darkMode" content={darkMode ? t('translation.lightMode_tooltip') : t('translation.darkMode_tooltip')} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
+        <Tooltip id="darkMode" content={darkMode ? t('menusAndHome.lightMode_tooltip') : t('menusAndHome.darkMode_tooltip')} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
         </>
     )
 }

@@ -1,8 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import { eng } from "../locales/enTranslation";
-import { esp } from "../locales/esTranslation";
+import menusAndHomeEn from "../locales/en/menusAndHome.json";
+import menusAndHomeEs from "../locales/es/menusAndHome.json";
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -10,12 +10,12 @@ import { esp } from "../locales/esTranslation";
 const resources = {
   en: {
     translation: {
-      translation: eng,
+      menusAndHome: menusAndHomeEn,
     },
   },
   es: {
     translation: {
-      translation: esp,
+      menusAndHome: menusAndHomeEs,
     },
   },
 };
