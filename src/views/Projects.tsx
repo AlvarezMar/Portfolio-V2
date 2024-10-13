@@ -12,11 +12,13 @@ function Projects(){
 
     const handleOpenModal = (project: Project): void => {
         setSelectedProject(project)
+        history.pushState(null, '', `#${project.title}`)
         document.body.style.overflow = 'hidden'
     }
 
     const handleCloseModal = (): void => {
         setSelectedProject(null)
+        history.pushState(null, '', `#Projects`)
           document.body.style.overflow = 'auto'
     }
 
