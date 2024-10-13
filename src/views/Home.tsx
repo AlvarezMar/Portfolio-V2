@@ -11,7 +11,7 @@ function Home(){
         <>
         <section className="max-w-[1200px] mx-auto px-4 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_auto] place-items-center gap-9 lg:h-screen pb-24 lg:pb-52">
             <div className="lg:text-end">
-                <h1 translate="no" className="text-[66px] lg:text-9xl font-extrabold lg:font-[900] leading-[4rem] lg:leading-[6.5rem] pb-1 lg:py-5">Fullstack Developer</h1>
+                <h1 translate="no" className="text-[65px] lg:text-9xl font-extrabold lg:font-[900] leading-[4rem] lg:leading-[6.5rem] pb-1 lg:py-5">Fullstack Developer</h1>
                 <span className="text-3xl font-bold">Based in <span className="text-accent">Mexico City.</span></span>                
                 <p className="lg:ml-[17rem] mt-6 lg:mt-1 text-secondary dark:text-secondary_dark">Welcome to my portfolio that transcends time and space. Discover the artistry of code and innovation, crafted to create seamless digital experiences.</p>
 
