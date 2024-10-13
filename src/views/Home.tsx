@@ -29,7 +29,7 @@ function Home(){
                     <hr className="w-full border-t-2 dark:border-hr_dark"/>
                 </div>
                 
-                <a href="#Contact" className="inline-flex gap-2 bg-primary text-background p-2.5 rounded-md mt-1 hover:scale-105 transition-all">Contact me
+                <a href="#Contact" className="inline-flex gap-2 bg-primary text-background p-3 rounded-xl mt-1 hover:scale-105 border-transparent transition-all">Contact me
                     <img src={send} alt="Send icon to send a new email" width="20px" />
                 </a>
             

@@ -37,10 +37,10 @@ function ProjectDetail({project}: ProjectDetailProps){
                 <div className="flex flex-col mt-5 gap-1">
                     <h2 className="text-2xl font-bold mb-2">Project Links<span className="text-accent">.</span></h2>
                     <div className="flex gap-3">
-                        <a href={project.repoUrl} target="_blank" className="flex place-items-center gap-2 text-nowrap bg-primary text-background p-2.5 rounded-md transition-all hover:scale-105">Source Code
+                        <a href={project.repoUrl} target="_blank" className="flex place-items-center gap-2 text-nowrap bg-primary text-background p-3 rounded-xl transition-all hover:scale-105">Source Code
                             <Github className="w-[24px] duration-0"/>
                         </a>
-                        <a href={project.url} target="_blank" className={`flex place-items-center gap-2 text-nowrap p-2.5 rounded-md transition-all hover:scale-105 ${project.url ? "bg-primary text-background" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default pointer-events-none"}`}>Live Project
+                        <a href={project.url} target="_blank" className={`flex place-items-center gap-2 text-nowrap p-3 rounded-xl transition-all hover:scale-105 ${project.url ? "bg-primary text-background" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default pointer-events-none"}`}>Live Project
                             <Link className="w-[24px] duration-0"/>
                         </a>
                     </div>

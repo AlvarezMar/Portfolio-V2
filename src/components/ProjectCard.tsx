@@ -15,7 +15,7 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
     
     return (
         <>
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-[2fr_1fr] items-center gap-6 border-[3px] rounded-lg border-container dark:border-container_dark p-4 lg:p-9 max-w-[60rem]">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-[2fr_1fr] items-center gap-6 border-[3px] rounded-2xl border-container dark:border-container_dark p-4 lg:p-9 max-w-[60rem]">
 
             <div className="flex flex-col gap-3 pt-5">
                 <h3 translate="no" className="text-3xl font-semibold transition-colors duration-75">{project.title}</h3>
@@ -31,15 +31,17 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
                 <span onClick={() => onOpenModal(project)} className="text-accent hover:underline mb-0 mt-7 lg:mt-2 cursor-pointer">Discover more &#11166;</span>
             </div>
 
-            <div className="lg:w-[22rem] lg:h-[245px] rounded-lg overflow-hidden relative">
-                <img src={project.imgUrl} alt="" onClick={() => onOpenModal(project)} className="w-full h-auto object-cover object-top max-h-[245px] cursor-pointer transition-all hover:scale-110"/>
+            <div className="lg:w-[22rem] lg:h-[245px] relative">
+                <div className="overflow-hidden rounded-lg">
+                    <img src={project.imgUrl} alt="" onClick={() => onOpenModal(project)} className="w-full h-auto object-cover object-top max-h-[245px] cursor-pointer transition-all hover:scale-110"/>
+                </div>
 
-                <div className="flex flex-col gap-2 border-shape-left border-shape-top absolute right-0 bottom-0 bg-background dark:bg-background_dark pt-2 pl-2 rounded-tl-xl transition-colors duration-[.3s]">
-                    <a href={project.repoUrl} target="_blank" data-tooltip-id="code" className="bg-primary rounded-md text-background p-2 hover:scale-110 transition-all">
+                <div className="flex flex-col gap-2 border-shape-left border-shape-top absolute right-0 bottom-0 bg-background dark:bg-background_dark pt-2 pl-2 rounded-tl-xl transition-colors duration-[.35s]">
+                    <a href={project.repoUrl} target="_blank" data-tooltip-id="code" className="bg-primary rounded-lg text-background p-2 hover:scale-110 transition-all">
                         <Code className="w-[24px]"/>
                     </a>
 
-                    <a href={project.url} target="_blank" data-tooltip-id="link" className={`p-2 rounded-md hover:scale-110 transition-all ${project.url ? "bg-primary text-background" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default pointer-events-none"}`}>
+                    <a href={project.url} target="_blank" data-tooltip-id="link" className={`p-2 rounded-lg hover:scale-110 transition-all ${project.url ? "bg-primary text-background" : "bg-[#E5E5E5] text-[#AFAFAF] cursor-default pointer-events-none"}`}>
                         <Link className="w-[24px]"/>
                     </a>
                 </div>

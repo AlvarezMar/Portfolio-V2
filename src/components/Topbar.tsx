@@ -38,12 +38,12 @@ function Topbar(){
 
             <div className="flex gap-3">
                 <a href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank" 
-                className="flex place-items-center gap-2 bg-primary text-background p-2 lg:p-2.5 rounded-md hover:scale-105 transition-all">
+                className="flex place-items-center gap-2 bg-primary text-background p-2 lg:p-3 rounded-xl hover:scale-105 transition-all">
                     <span className="hidden lg:inline">Download CV</span>
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" className="w-[18px] lg:w-[20px]"/>
                 </a>
 
-                <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" className="cursor-pointer w-[25px] lg:w-[35px]" data-tooltip-id="darkMode"/>
+                <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" className="cursor-pointer w-[25px] lg:w-[30px]" data-tooltip-id="darkMode"/>
  
             </div>
         </section>

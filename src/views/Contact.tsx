@@ -26,11 +26,11 @@ function Contact(){
                 <div className="text-sm lg:text-base bg-[#E5E5E5] text-[#AFAFAF] p-3 rounded-md max-w-96 w-3/4 lg:w-full">
                     <h2 translate="no" className="text-start">alvarez.majuan@hotmail.com</h2>
                 </div>
-                <a href="mailto:alvarez.majuan@hotmail.com" target="_blank" data-tooltip-id="sendEmail" className="bg-primary text-background p-3 rounded-md hover:scale-110 transition-all">
+                <a href="mailto:alvarez.majuan@hotmail.com" target="_blank" data-tooltip-id="sendEmail" className="bg-primary text-background p-3.5 rounded-lg hover:scale-110 transition-all">
                     <img src={send} alt="Send icon to send a new email" width="20px"/>
                 </a>
                 
-                <button onClick={copyToClipboard} data-tooltip-id="copyEmail" className="bg-primary text-background p-3 rounded-md hover:scale-110 transition-all">
+                <button onClick={copyToClipboard} data-tooltip-id="copyEmail" className="bg-primary text-background p-3.5 rounded-lg hover:scale-110 transition-all">
                     <img src={copy} alt="Copy icon to copy Juan Carlos's email to clipboard" width="20px"/>
                 </button>
             </div>
