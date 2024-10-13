@@ -1,13 +1,21 @@
 import { Timeline } from "flowbite-react";
-import { experience } from "../utils/experience";
+import { useTranslation } from "react-i18next";
+
+interface positionItem {
+    date: string,
+    positionAndCompany: string,
+    description: string
+}
 
 function Experience(){
 
+    const { t } = useTranslation();
+    const experience = t('experience.positions', {returnObjects: true}) as positionItem[];
+
     return (
-        <>
         <section className="max-w-[1200px] mx-auto mt-10 mb-24 px-4 sm:px-10" id="Experience">
             <div className="flex place-items-center mb-8">
-                <h1 className="text-[49px] lg:text-6xl font-extrabold">Experience<span className="text-accent">.</span></h1>
+                <h1 className="text-[49px] lg:text-6xl font-extrabold">{t('experience.heading')}<span className="text-accent">.</span></h1>
                 <hr className="w-full mx-5 border-t-2 dark:border-hr_dark"/>
             </div>
 
@@ -23,12 +31,10 @@ function Experience(){
                                 <Timeline.Body className="text-secondary dark:text-secondary_dark transition-colors duration-300">{job.description}</Timeline.Body>
                             </Timeline.Content>
                         </Timeline.Item>
-                    ))}
-                    
+                    ))}   
                 </Timeline>
             </div>
         </section>
-        </>
     )
 }
 
