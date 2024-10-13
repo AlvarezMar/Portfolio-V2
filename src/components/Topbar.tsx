@@ -4,9 +4,12 @@ import { Tooltip } from "react-tooltip"
 import cv from "../assets/svg/elements/cv.svg"
 import light from "../assets/svg/elements/light.svg"
 import dark from "../assets/svg/elements/dark.svg"
+import { useTranslation } from "react-i18next"
 
 
 function Topbar(){
+
+    const { t } = useTranslation();
 
     const [darkMode, setDarkMode] = useState(() => {
         const savedMode = localStorage.getItem("theme")
@@ -39,7 +42,7 @@ function Topbar(){
             <div className="flex gap-3">
                 <a href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank" 
                 className="flex place-items-center gap-2 bg-primary text-background p-2 lg:p-3 rounded-xl hover:scale-105 transition-all">
-                    <span className="hidden lg:inline">Download CV</span>
+                    <span className="hidden lg:inline">{t('translation.cv_button')}</span>
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" className="w-[18px] lg:w-[20px]"/>
                 </a>
 
@@ -48,7 +51,7 @@ function Topbar(){
             </div>
         </section>
 
-        <Tooltip id="darkMode" content={darkMode ? "Light Mode" : "Dark Mode"} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
+        <Tooltip id="darkMode" content={darkMode ? t('translation.lightMode_tooltip') : t('translation.darkMode_tooltip')} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
         </>
     )
 }

@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import Availability from "../assets/svg/status/availability.svg?react"
 import Location from "../assets/svg/status/location.svg?react"
 
 function Status(){
+
+    const { t } = useTranslation();
 
     return (
         <>
@@ -10,14 +13,14 @@ function Status(){
                 <div className='group flex place-items-center w-[43px] lg:w-[60px]'>
                     <Availability className="z-20"/>
                     <div className='text-sm lg:text-base opacity-0 absolute z-10 bg-background dark:bg-background_dark py-3 px-5 rounded-r-full translate-x-3 group-hover:translate-x-[22%] lg:group-hover:translate-x-[35%] group-hover:opacity-100 transition-all duration-300'>
-                        <p className="whitespace-nowrap">Available to work</p>
+                        <p className="whitespace-nowrap">{t('translation.availability_tooltip')}</p>
                     </div>
 
                 </div>
                 <div className='group flex place-items-center'>
                     <Location className="z-20"/>
                     <div className='text-sm lg:text-base opacity-0 absolute z-10 bg-background dark:bg-background_dark py-3 px-5 rounded-r-full translate-x-3 group-hover:translate-x-[22%] lg:group-hover:translate-x-[35%] group-hover:opacity-100 transition-all duration-300'>
-                        <p className="whitespace-nowrap">Open to relocate</p>
+                        <p className="whitespace-nowrap">{t('translation.relocation_tooltip')}</p>
                     </div>
 
                 </div>

@@ -15,7 +15,7 @@ function Home(){
         <section className="max-w-[1200px] mx-auto px-4 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_auto] place-items-center gap-9 lg:h-screen pb-24 lg:pb-52">
             <div className="lg:text-end">
                 <h1 translate="no" className="text-[65px] lg:text-9xl font-extrabold lg:font-[900] leading-[4rem] lg:leading-[6.5rem] pb-1 lg:py-5">Fullstack Developer</h1>
-                <span className="text-3xl font-bold">Based in <span className="text-accent">Mexico City.</span></span>                
+                <span className="text-3xl font-bold">{t('translation.location.prefix')} <span className="text-accent">{t('translation.location.city')}</span></span>                
                 <p className="lg:ml-[17rem] mt-6 lg:mt-1 text-secondary dark:text-secondary_dark">{t('translation.welcome')}</p>
 
                 <div className="flex flex-row-reverse lg:flex-row place-items-center gap-5 my-2 lg:my-0">

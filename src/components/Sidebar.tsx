@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 import logo from "/logoWhite.png"
 
 function Sidebar(){
 
-    const navMenu = ["Home", "Experience", "Projects", "About", "Contact", "Blog"]
+    const { t } = useTranslation();
 
+    const navMenu = t('translation.sidebar_menu', {returnObjects: true}) as string[];
+    
     return(
         <>
         <aside className="bg-primary flex flex-col gap-2 items-center w-[43px] lg:w-[60px] h-screen mr-auto sticky top-0 rounded-r-3xl z-20 overflow-hidden">
@@ -26,7 +30,6 @@ function Sidebar(){
         </aside>
         </>
     )
-
 }
 
 export default Sidebar;
