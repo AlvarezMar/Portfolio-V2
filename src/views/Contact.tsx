@@ -23,7 +23,7 @@ function Contact(){
             </div>
 
             <div className="flex gap-2 items-center justify-center">
-                <div className="text-sm lg:text-base bg-[#E5E5E5] text-[#AFAFAF] p-3 rounded-md max-w-96 w-3/4 lg:w-full">
+                <div className="text-sm lg:text-base bg-[#E5E5E5] text-[#AFAFAF] p-3 rounded-md max-w-96 w-[14rem] lg:w-full">
                     <h2 translate="no" className="text-start">alvarez.majuan@hotmail.com</h2>
                 </div>
                 <a href="mailto:alvarez.majuan@hotmail.com" target="_blank" data-tooltip-id="sendEmail" className="bg-primary text-background p-3.5 rounded-lg hover:scale-110 transition-all">
