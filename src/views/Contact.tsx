@@ -9,7 +9,7 @@ function Contact(){
 
     const { t } = useTranslation();
 
-    const [copiedToClipboard, setCopiedToClipboard] = useState(t('contact.copy_tooltip'))
+    const [copiedToClipboard, setCopiedToClipboard] = useState(t('contact.copyTooltip'))
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText("alvarez.majuan@hotmail.com")
@@ -22,7 +22,7 @@ function Contact(){
 
             <div className="mb-6">
                 <h1 className="text-[70px] lg:text-8xl font-bold">{t('contact.heading')}<span className="text-accent">.</span></h1>
-                <p className="text-base lg:text-lg max-w-[570px] mx-auto text-secondary dark:text-secondary_dark">{t('contact.subheading_one')}<a href="https://linkedin.com/in/alvarezmajuan" target="_blank" className="text-accent hover:underline">LinkedIn</a>{t('contact.subheading_two')}</p>
+                <p className="text-base lg:text-lg max-w-[570px] mx-auto text-secondary dark:text-secondary_dark">{t('contact.subheadingOne')}<a href="https://linkedin.com/in/alvarezmajuan" target="_blank" className="text-accent hover:underline">LinkedIn</a>{t('contact.subheadingTwo')}</p>
             </div>
 
             <div className="flex gap-2 items-center justify-center">
@@ -39,7 +39,7 @@ function Contact(){
             </div>
         </section>
 
-        <Tooltip id="sendEmail" content={t('contact.send_tooltip')} opacity="1"place="top" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
+        <Tooltip id="sendEmail" content={t('contact.sendTooltip')} opacity="1"place="top" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
         <Tooltip id="copyEmail" content={copiedToClipboard} opacity="1" place="top-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem'}}/>
         </>
     )

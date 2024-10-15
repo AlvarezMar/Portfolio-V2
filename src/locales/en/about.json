@@ -1,7 +1,7 @@
 {
     "heading": "About",
     "greeting": "Hey! I'm ",
-    "first_paragraph": "An enthusiastic software developer who loves turning complex challenges into simple and elegant solutions. My journey in the tech world is driven by curiosity and a relentless pursuit of knowledge, creativity, and personal growth.",
-    "second_paragraph": "In addition to my software development skills, I bring a versatile technical background with hands-on experience in programming and information technology. My background in electromechanical maintenance has equiped me with meticulous attention to detail and exceptional problem-solving abilities, which I now apply to software development projects.",
+    "firstParagraph": "An enthusiastic software developer who loves turning complex challenges into simple and elegant solutions. My journey in the tech world is driven by curiosity and a relentless pursuit of knowledge, creativity, and personal growth.",
+    "secondParagraph": "In addition to my software development skills, I bring a versatile technical background with hands-on experience in programming and information technology. My background in electromechanical maintenance has equiped me with meticulous attention to detail and exceptional problem-solving abilities, which I now apply to software development projects.",
     "stack": "My current tech stack is:"
 }

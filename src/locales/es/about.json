@@ -1,7 +1,7 @@
 {
     "heading": "Sobre mi",
     "greeting": "¡Hola! Soy ",
-    "first_paragraph": "Un desarrollador de software entusiasta que disfruta transformar desafíos complejos en soluciones simples y elegantes. Mi trayectoria en el mundo de la tecnología está impulsada por la curiosidad y una búsqueda constante de conocimiento, creatividad y crecimiento personal.",
-    "second_paragraph": "Además de mis habilidades en desarrollo de software, cuento con una formación técnica versátil y experiencia práctica en programación y tecnologías de la información. Mi experiencia en mantenimiento electromecánico me ha dotado de atención meticulosa al detalle y grandes habilidades para la resolución de problemas, que ahora aplico a proyectos de desarrollo de software.",
+    "firstParagraph": "Un desarrollador de software entusiasta que disfruta transformar desafíos complejos en soluciones simples y elegantes. Mi trayectoria en el mundo de la tecnología está impulsada por la curiosidad y una búsqueda constante de conocimiento, creatividad y crecimiento personal.",
+    "secondParagraph": "Además de mis habilidades en desarrollo de software, cuento con una formación técnica versátil y experiencia práctica en programación y tecnologías de la información. Mi experiencia en mantenimiento electromecánico me ha dotado de atención meticulosa al detalle y grandes habilidades para la resolución de problemas, que ahora aplico a proyectos de desarrollo de software.",
     "stack": "Mi stack tecnológico actual es:"
 }

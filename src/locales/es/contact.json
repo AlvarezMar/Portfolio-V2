@@ -1,9 +1,9 @@
 {
     "heading": "Contacto",
-    "subheading_one": "¿Tienes alguna idea o pregunta? Mándame un correo o conecta conmigo en ",
-    "subheading_two": ". ¡Siempre estoy abierto a nuevas oportunidades!",
+    "subheadingOne": "¿Tienes alguna idea o pregunta? Mándame un correo o conecta conmigo en ",
+    "subheadingTwo": ". ¡Siempre estoy abierto a nuevas oportunidades!",
 
-    "send_tooltip": "Enviar Email",
-    "copy_tooltip": "Copiar Email",
-    "copied_tooltip": "Copiado al Portapapeles! 💛"
+    "sendTooltip": "Enviar Email",
+    "copyTooltip": "Copiar Email",
+    "copiedTooltip": "Copiado al Portapapeles! 💛"
 }

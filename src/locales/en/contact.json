@@ -1,9 +1,9 @@
 {
     "heading": "Contact",
-    "subheading_one": "Have an idea or question? Feel free to contact me via email or connect with me on ",
-    "subheading_two": ". I'm always open to new opportunities!",
+    "subheadingOne": "Have an idea or question? Feel free to contact me via email or connect with me on ",
+    "subheadingTwo": ". I'm always open to new opportunities!",
 
-    "send_tooltip": "Send Email",
-    "copy_tooltip": "Copy Email",
-    "copied_tooltip": "Copied to Clipboard! 💛"
+    "sendTooltip": "Send Email",
+    "copyTooltip": "Copy Email",
+    "copiedTooltip": "Copied to Clipboard! 💛"
 }

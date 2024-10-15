@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { Tooltip } from "react-tooltip"
+import { useTranslation } from "react-i18next"
 
 import cv from "../assets/svg/elements/cv.svg"
 import light from "../assets/svg/elements/light.svg"
 import dark from "../assets/svg/elements/dark.svg"
-import { useTranslation } from "react-i18next"
-
+import Language from "../assets/svg/elements/language.svg?react"
+import i18next from "i18next"
 
 function Topbar(){
 
@@ -16,6 +17,14 @@ function Topbar(){
         if(savedMode === 'dark') return true
         return false
     });
+
+    const [language, setLanguage] = useState("es")
+
+    const changeLanguage = () => {
+        if(language === "en") setLanguage("es")
+            else setLanguage("en")
+        i18next.changeLanguage(language)
+    }
 
     const toggleTheme = () => {
         const isDark = document.documentElement.classList.contains('dark');
@@ -42,16 +51,20 @@ function Topbar(){
             <div className="flex gap-3">
                 <a href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank" 
                 className="flex place-items-center gap-2 bg-primary text-background p-2 lg:p-3 rounded-xl hover:scale-105 transition-all">
-                    <span className="hidden lg:inline">{t('menusAndHome.cv_button')}</span>
+                    <span className="hidden lg:inline">{t('menusAndHome.cvButton')}</span>
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" className="w-[18px] lg:w-[20px]"/>
                 </a>
 
+                <Language onClick={changeLanguage} className="w-[25px]" data-tooltip-id="translate"/>
+
                 <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" className="cursor-pointer w-[25px] lg:w-[30px]" data-tooltip-id="darkMode"/>
- 
+
             </div>
         </section>
 
-        <Tooltip id="darkMode" content={darkMode ? t('menusAndHome.lightMode_tooltip') : t('menusAndHome.darkMode_tooltip')} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
+        <Tooltip id="darkMode" content={darkMode ? t('menusAndHome.lightModeTooltip') : t('menusAndHome.darkModeTooltip')} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
+
+        <Tooltip id="translate" content={t('menusAndHome.languageTooltip')} opacity="1" place="bottom-end" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
         </>
     )
 }

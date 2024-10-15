@@ -1,8 +1,8 @@
 import { socials } from "../utils/socials";
 import { Tooltip } from "react-tooltip";
+import { useTranslation } from "react-i18next";
 
 import logo from "/logo.png"
-import { useTranslation } from "react-i18next";
 
 function Footer(){
 
@@ -23,7 +23,7 @@ function Footer(){
                         </li>
 
                         <li className="hover:text-accent">
-                            <a className="duration-150" href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank">{t('menusAndHome.cv_button')}</a>
+                            <a className="duration-150" href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank">{t('menusAndHome.cvButton')}</a>
                         </li>
                     </ul>
                 </div>

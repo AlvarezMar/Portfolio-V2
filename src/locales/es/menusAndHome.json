@@ -1,7 +1,8 @@
 {
-    "cv_button": "Descargar CV",
-    "darkMode_tooltip": "Modo Oscuro",
-    "lightMode_tooltip": "Modo Claro",
+    "cvButton": "Descargar CV",
+    "darkModeTooltip": "Modo Oscuro",
+    "lightModeTooltip": "Modo Claro",
+    "languageTooltip": "English",
 
     "menu": [
         {
@@ -36,7 +37,7 @@
       },
     "welcome":
         "Bienvenido a mi portafolio que trasciende el tiempo y espacio. Descubre el arte del código y la innovación, diseñado para crear experiencias digitales sin fisuras.",
-    "availability_tooltip": "Disponible para trabajar",
-    "relocation_tooltip": "Abierto a reubicarme",
-    "contact_button": "Contáctame"
+    "availabilityTooltip": "Disponible para trabajar",
+    "relocationTooltip": "Abierto a reubicarme",
+    "contactButton": "Contáctame"
 }
