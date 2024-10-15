@@ -21,7 +21,7 @@ function Contact(){
         <section className="max-w-[1200px] mx-auto text-center px-4 my-52 lg:my-64" id="Contact">
 
             <div className="mb-6">
-                <h1 className="text-7xl lg:text-8xl font-bold">{t('contact.heading')}<span className="text-accent">.</span></h1>
+                <h1 className="text-[70px] lg:text-8xl font-bold">{t('contact.heading')}<span className="text-accent">.</span></h1>
                 <p className="text-base lg:text-lg max-w-[570px] mx-auto text-secondary dark:text-secondary_dark">{t('contact.subheading_one')}<a href="https://linkedin.com/in/alvarezmajuan" target="_blank" className="text-accent hover:underline">LinkedIn</a>{t('contact.subheading_two')}</p>
             </div>
 

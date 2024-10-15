@@ -10,7 +10,7 @@ function About(){
         <section className="max-w-[1200px] mx-auto px-4 sm:px-10" id="About">
             <div className="flex flex-col gap-4">
                 <div className="flex place-items-center mb-4">
-                    <h1 className="text-6xl font-extrabold text-nowrap">{t('about.heading')}<span className="text-accent">.</span></h1>
+                    <h1 className="text-[55px] font-extrabold text-nowrap">{t('about.heading')}<span className="text-accent">.</span></h1>
                     <hr  className="w-full mx-5 border-t-2 dark:border-hr_dark"/>
                 </div>
 
