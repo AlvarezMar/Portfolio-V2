@@ -19,7 +19,7 @@ function Footer(){
 
                     <ul className="flex font-bold gap-3 lg:gap-6 text-sm lg:text-base">
                         <li className="hover:text-accent">
-                            <a className="duration-150" href="#">{t('menusAndHome.menu.0')}</a>
+                            <a className="duration-150" href="#">{t('menusAndHome.menu.0.menuLabel')}</a>
                         </li>
 
                         <li className="hover:text-accent">

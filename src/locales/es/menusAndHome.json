@@ -3,7 +3,32 @@
     "darkMode_tooltip": "Modo Oscuro",
     "lightMode_tooltip": "Modo Claro",
 
-    "menu": ["Inicio", "Experiencia", "Proyectos", "Sobre mi", "Contacto", "Blog"],
+    "menu": [
+        {
+            "menuLabel": "Inicio",
+            "menuItemId": "Home"
+        },
+        {
+            "menuLabel": "Experiencia",
+            "menuItemId": "Experience"
+        },
+        {
+            "menuLabel": "Proyectos",
+            "menuItemId": "Projects"
+        },
+        {
+            "menuLabel": "Sobre mi",
+            "menuItemId": "About"
+        },
+        {
+            "menuLabel": "Contacto",
+            "menuItemId": "Contact"
+        },
+        {
+            "menuLabel": "Blog",
+            "menuItemId": "Blog"
+        }
+    ],
 
     "location": {
         "prefix": "Con sede en ",

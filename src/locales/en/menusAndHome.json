@@ -2,8 +2,33 @@
     "cv_button": "Download CV",
     "darkMode_tooltip": "Dark Mode",
     "lightMode_tooltip": "Light Mode",
-    
-    "menu": ["Home", "Experience", "Projects", "About", "Contact", "Blog"],
+
+    "menu": [
+        {
+            "menuLabel": "Home",
+            "menuItemId": "Home"
+        },
+        {
+            "menuLabel": "Experience",
+            "menuItemId": "Experience"
+        },
+        {
+            "menuLabel": "Projects",
+            "menuItemId": "Projects"
+        },
+        {
+            "menuLabel": "About",
+            "menuItemId": "About"
+        },
+        {
+            "menuLabel": "Contact",
+            "menuItemId": "Contact"
+        },
+        {
+            "menuLabel": "Blog",
+            "menuItemId": "Blog"
+        }
+    ],
 
     "location": {
         "prefix": "Based in ",
