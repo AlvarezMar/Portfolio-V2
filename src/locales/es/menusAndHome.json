@@ -1,7 +1,7 @@
 {
     "cv_button": "Descargar CV",
-    "darkMode_tooltip": "Modo oscuro",
-    "lightMode_tooltip": "Modo claro",
+    "darkMode_tooltip": "Modo Oscuro",
+    "lightMode_tooltip": "Modo Claro",
 
     "menu": ["Inicio", "Experiencia", "Proyectos", "Sobre mi", "Contacto", "Blog"],
 

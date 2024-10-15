@@ -1,7 +1,7 @@
 {
     "cv_button": "Download CV",
-    "darkMode_tooltip": "Dark mode",
-    "lightMode_tooltip": "Light mode",
+    "darkMode_tooltip": "Dark Mode",
+    "lightMode_tooltip": "Light Mode",
     
     "menu": ["Home", "Experience", "Projects", "About", "Contact", "Blog"],
 
