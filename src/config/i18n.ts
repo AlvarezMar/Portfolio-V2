@@ -13,6 +13,9 @@ import aboutEs from "../locales/es/about.json";
 import contactEn from "../locales/en/contact.json";
 import contactEs from "../locales/es/contact.json";
 
+import projectsEn from "../locales/en/projects.json";
+import projectsEs from "../locales/es/projects.json";
+
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
@@ -23,6 +26,7 @@ const resources = {
       experience: experienceEn,
       about: aboutEn,
       contact: contactEn,
+      projects: projectsEn,
     },
   },
   es: {
@@ -31,6 +35,7 @@ const resources = {
       experience: experienceEs,
       about: aboutEs,
       contact: contactEs,
+      projects: projectsEs,
     },
   },
 };

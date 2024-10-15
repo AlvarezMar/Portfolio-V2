@@ -5,6 +5,7 @@ import ProjectTag from "./ProjectTag";
 
 import Code from "../assets/svg/elements/code.svg?react"
 import Link from "../assets/svg/elements/link.svg?react"
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
     project: Project;
@@ -12,6 +13,8 @@ interface ProjectCardProps {
 }
 
 function ProjectCard({project, onOpenModal}: ProjectCardProps){
+
+    const { t } = useTranslation();
     
     return (
         <>
@@ -28,7 +31,7 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
                     ))}
                 </div>
 
-                <span onClick={() => onOpenModal(project)} className="text-accent hover:underline mb-0 mt-7 lg:mt-2 cursor-pointer">Discover more &#11166;</span>
+                <span onClick={() => onOpenModal(project)} className="text-accent hover:underline mb-0 mt-7 lg:mt-2 cursor-pointer">{t('projects.discoverLink')}</span>
             </div>
 
             <div className="lg:w-[22rem] lg:h-[245px] relative">
@@ -48,8 +51,8 @@ function ProjectCard({project, onOpenModal}: ProjectCardProps){
             </div>
         </div>
 
-        <Tooltip id="code" content="Source Code" opacity="1" place="right" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
-        <Tooltip id="link" content="Live Project" opacity="1" place="right" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
+        <Tooltip id="code" content={t('projects.projectLinks.sourceCode')} opacity="1" place="right" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
+        <Tooltip id="link" content={t('projects.projectLinks.liveProject')} opacity="1" place="right" style={{fontFamily: 'monospace', padding: '.3rem .8rem', backgroundColor: '#323232', color: 'white', borderRadius: '1rem', zIndex: '60'}}/>
         </>
     )
 }

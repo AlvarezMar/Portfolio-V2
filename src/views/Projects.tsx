@@ -1,12 +1,26 @@
 import { useState } from "react";
-import { Project, projects } from "../utils/projects"
+import { Project } from "../utils/projects"
+import { useTranslation } from "react-i18next";
 
 import ProjectCard from "../components/ProjectCard";
 import ProjectDetail from "../components/ProjectDetail";
 
 import close from "../assets/svg/elements/close.svg"
 
+interface project {
+    "title": string,
+    "previewDescription": string,
+    "fullDescription": string[],
+    "tecnologies": string[],
+    "imgUrl": string,
+    "repoUrl": string,
+    "url": string
+}
+
 function Projects(){
+
+    const { t } = useTranslation();
+    const projects = t('projects.projectList', {returnObjects: true}) as project[]
 
     const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
@@ -27,7 +41,7 @@ function Projects(){
         <section className="max-w-[1200px] mx-auto mb-24 px-4 sm:px-10" id="Projects">
             <div className="flex place-items-center mb-8">
                 <hr className="w-full mx-5 border-t-2 dark:border-hr_dark"/>
-                <h1 className="text-6xl font-extrabold whitespace-nowrap">Projects<span className="text-accent">.</span></h1>
+                <h1 className="text-6xl font-extrabold whitespace-nowrap">{t('projects.heading')}<span className="text-accent">.</span></h1>
             </div>
 
             <div className="flex flex-col place-items-center gap-5">

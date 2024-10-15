@@ -1,0 +1,84 @@
+{
+    "heading": "Proyectos",
+    "discoverLink": "Más información ➔",
+    "linksHeading": "Links del Proyecto",
+    "projectLinks": {
+        "sourceCode": "Código fuente",
+        "liveProject": "Ver online"
+    },
+    "projectList": [
+        {
+            "title": "YouDrive",
+            "previewDescription":
+              "Aplicación colaborativa para gestionar información de alquiler de vehículos. Esta aplicación permite a los usuarios publicar, modificar vehículos y gestionar procesos de alquiler.",
+            "fullDescription": [
+              "Este proyecto colaborativo es una plataforma diseñada para gestionar información sobre el alquiler de vehículos. Permite a los usuarios publicar, modificar y gestionar listados de vehículos, así como facilitar el proceso de alquiler entre clientes y propietarios de vehículos. Formé parte del equipo de desarrollo backend, centrándome en las interacciones con la base de datos y la lógica de negocio utilizando NestJS y PostgreSQL con TypeORM.",
+
+              "Además de mis responsabilidades en el backend, también trabajé en funciones clave como el chat en tiempo real entre clientes y propietarios de vehículos, la autenticación con Google y la integración de Leaflet para el seguimiento de la ubicación de los vehículos. El proyecto también implicó el uso de Cloudinary para el almacenamiento de imágenes, Stripe para pagos, notificaciones por correo electrónico a través de un sistema de correo y cron jobs para la automatización de tareas. Proporcioné soporte adicional al equipo de frontend, que utilizó Next.js y Tailwind para la interfaz de usuario."
+            ],
+            "tecnologies": [
+              "NestJS",
+              "Next.js",
+              "Tailwind",
+              "PostgreSQL",
+              "TypeScript",
+              "Passport",
+              "TypeORM",
+              "Stripe",
+              "Cloudinary",
+              "Mailer",
+              "Leaflet",
+              "Vercel"
+            ],
+            "imgUrl":
+              "https://res.cloudinary.com/dwhmcn88z/image/upload/v1728411194/driveshot_lmkvau.png",
+            "repoUrl": "https://github.com/maccari78/PM6-grupo3",
+            "url": "https://youdrive.vercel.app/"
+          },
+          {
+            "title": "Doña Diabla",
+            "previewDescription":
+              "Este proyecto de restaurante proporciona una plataforma para que los usuarios se registren, inicien sesión, programen citas y las eliminen de manera eficiente siempre que sea necesario.",
+            "fullDescription": [
+              "Este proyecto de restaurante es una plataforma dinámica donde los usuarios pueden registrarse, iniciar sesión, programar citas y gestionar (crear, editar y eliminar) sus reservaciones según sea necesario. Fue construido completamente por mí, y el frontend utiliza React y Redux para una interfaz intuitiva y responsiva, mientras que el backend aprovecha Express y PostgreSQL para el almacenamiento y gestión de datos.",
+
+              "Utilicé TypeORM para interacciones sin problemas con la base de datos y TypeScript para garantizar la seguridad de tipos en todo el proyecto. Además, Nodemon mantuvo un flujo de trabajo de desarrollo eficiente. Mi rol abarcó todo el proceso de desarrollo, desde el diseño de los componentes del frontend hasta la gestión de la lógica del backend y la administración de la base de datos."
+            ],
+            "tecnologies": [
+              "React",
+              "Redux",
+              "JavaScript",
+              "TypeScript",
+              "PostgreSQL",
+              "Express",
+              "TypeORM",
+              "Nodemon"
+            ],
+            "imgUrl":
+              "https://res.cloudinary.com/dwhmcn88z/image/upload/v1728411192/diablashot_dmvw2a.png",
+            "repoUrl": "https://github.com/AlvarezMar/Dona-Diabla",
+            "url": ""
+          },
+          {
+            "title": "Movloom",
+            "previewDescription":
+              "Este sitio web de películas permite a los usuarios explorar información sobre películas, agregar nuevas a través de un formulario y almacenar toda la información en una base de datos.",
+            "fullDescription": [
+              "Este sitio web de películas es una aplicación fullstack que permite a los usuarios explorar información detallada sobre películas, agregar nuevas a través de un formulario fácil de usar y almacenar todos los datos de manera segura en una base de datos MongoDB. El proyecto también incluye una galería visualmente atractiva donde los usuarios pueden navegar a través de imágenes de películas de alta calidad, lo que mejora la experiencia general del usuario.",
+              "Desarrollé toda la aplicación utilizando JavaScript, Express, MongoDB y Mongoose en el backend. Se utilizó Webpack para la agrupación de módulos, y Nodemon ayudó a optimizar el proceso de desarrollo. Mi rol abarcó tanto el frontend como el backend, asegurando una interacción fluida entre la interfaz de usuario y la base de datos."
+            ],
+            "tecnologies": [
+              "JavaScript",
+              "Express",
+              "MongoDB",
+              "Mongoose",
+              "Webpack",
+              "Nodemon"
+            ],
+            "imgUrl":
+              "https://res.cloudinary.com/dwhmcn88z/image/upload/v1728411197/movshot_d6emh4.png",
+            "repoUrl": "https://github.com/AlvarezMar/MovLoom",
+            "url": ""
+        }
+    ]
+}
