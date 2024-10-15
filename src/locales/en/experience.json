@@ -3,7 +3,7 @@
     "positions": [
         {
           "date": "October 2024",
-          "positionAndCompany": "Associate Engineer/ Frontend Developer. HCLTech.",
+          "positionAndCompany": "Associate Engineer / Frontend Developer. HCLTech.",
           "description": "We'll see. 😱"
         },
         {
@@ -17,14 +17,14 @@
           "positionAndCompany":
             "Electromechanical Maintenance. Escuela de Aviación México.",
           "description":
-            "Oil change in hydraulic actuators of the flight simulator. Wiring of panel instruments for a new flight simulator. Implementation of Arduino code for instrument calibration with potentiometers when the flight simulator is turned on. Support to other areas with office-related tasks."
+            "Experienced in maintaining flight simulators, including oil changes for hydraulic actuators and wiring control panels. Skilled in cutting acrylic for panel masks and implementing Arduino code for calibrating instruments with potentiometers. Managed inventory, equipment classification, and provided technical support across departments to ensure smooth simulator operation."
         },
         {
           "date": "May 2021",
           "positionAndCompany":
             "Mechanical Maintenance. Minigrip de México S.A. de C.V.",
           "description":
-            "Cleaning and maintenance of industrial machinery. Support to operators to ensure the proper functioning of their machines. Lubrication as part of industrial maintenance and implementation of a schedule to keep a record of this process. Task planning and support to other departments."
+            "Over a year of experience in preventive and corrective maintenance of industrial machinery, including 220-440V bifasic and trifasic motors with delta/star connections. Machine lubrication as part of maintenance, tooling, and selecting components like bearings, belts, and fasteners. Supported operators, coordinated with departments, and managed inventory to ensure efficient equipment operation."
         }
       ]
 }

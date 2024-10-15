@@ -3,28 +3,28 @@
     "positions": [
         {
           "date": "Octubre 2024",
-          "positionAndCompany": "Ingeniero Asociado/ Desarrollador Frontend. HCLTech.",
+          "positionAndCompany": "Ingeniero Asociado / Desarrollador Frontend. HCLTech.",
           "description": "Ya veremos. 😱"
         },
         {
           "date": "Agosto 2023",
           "positionAndCompany": "Desarrollador Web Fullstack. Henry Bootcamp.",
           "description":
-            "Completed over 800 hours of theoretical and practical coursework, involving the creation of various projects and learning multiple technologies. Gained hands-on experience in software development, including front-end and back-end programming, version control, and collaborative coding practices."
+            "Completé más de 800 horas de contenido teórico-práctico, que incluyeron la creación de diversos proyectos y el aprendizaje de múltiples tecnologías. Adquirí experiencia práctica en desarrollo de software, incluyendo programación front-end y back-end, control de versiones y prácticas de codificación colaborativa."
         },
         {
           "date": "Julio 2022",
           "positionAndCompany":
             "Mantenimiento Electromecánico. Escuela de Aviación México.",
           "description":
-            "Oil change in hydraulic actuators of the flight simulator. Wiring of panel instruments for a new flight simulator. Implementation of Arduino code for instrument calibration with potentiometers when the flight simulator is turned on. Support to other areas with office-related tasks."
+            "Experiencia en el mantenimiento de simuladores de vuelo, incluyendo cambios de aceite en actuadores hidráulicos y cableado de paneles de control. Habilidad en el corte de acrílico para máscaras de paneles e implementación de código en Arduino para calibrar instrumentos con potenciómetros. Gestión de inventario, clasificación de equipo y soporte técnico a diversas áreas para asegurar el correcto funcionamiento del simulador."
         },
         {
           "date": "Mayo 2021",
           "positionAndCompany":
             "Mantenimiento Mecánico. Minigrip de México S.A. de C.V.",
           "description":
-            "Cleaning and maintenance of industrial machinery. Support to operators to ensure the proper functioning of their machines. Lubrication as part of industrial maintenance and implementation of a schedule to keep a record of this process. Task planning and support to other departments."
+            "Más de un año de experiencia en mantenimiento preventivo y correctivo de maquinaria industrial, incluyendo motores bifásicos y trifásicos de 220-440V con conexiones delta/estrella. Lubricación de máquinas como parte de mantenimiento, manejo de herramientas y selección de componentes como rodamientos, bandas y tornillería. Apoyo a operadores, coordinación con otros departamentos y gestión de inventarios para asegurar el funcionamiento eficiente del equipo."
         }
       ]
 }
