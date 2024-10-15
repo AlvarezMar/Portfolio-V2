@@ -2,8 +2,11 @@ import { socials } from "../utils/socials";
 import { Tooltip } from "react-tooltip";
 
 import logo from "/logo.png"
+import { useTranslation } from "react-i18next";
 
 function Footer(){
+
+    const { t } = useTranslation();
 
     return (
         <>
@@ -16,11 +19,11 @@ function Footer(){
 
                     <ul className="flex font-bold gap-3 lg:gap-6 text-sm lg:text-base">
                         <li className="hover:text-accent">
-                            <a className="duration-150" href="#">Home</a>
+                            <a className="duration-150" href="#">{t('menusAndHome.menu.0')}</a>
                         </li>
 
                         <li className="hover:text-accent">
-                            <a className="duration-150" href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank">Download CV</a>
+                            <a className="duration-150" href="https://docs.google.com/document/d/1UHZOjRkxEIEBW9Y9de9hTC_9kTX0YRyYtyTjBs69r3k/edit?usp=sharing" target="_blank">{t('menusAndHome.cv_button')}</a>
                         </li>
                     </ul>
                 </div>
