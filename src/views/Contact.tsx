@@ -13,7 +13,7 @@ function Contact(){
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText("alvarez.majuan@hotmail.com")
-        setCopiedToClipboard(t('contact.copied_tooltip'))
+        setCopiedToClipboard(t('contact.copiedTooltip'))
     }
 
     return (

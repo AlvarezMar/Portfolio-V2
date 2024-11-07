@@ -54,8 +54,8 @@ function Topbar(){
                     <span className="hidden lg:inline">{t('menusAndHome.cvButton')}</span>
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" className="w-[18px] lg:w-[20px]"/>
                 </a>
-
-                <Language onClick={changeLanguage} className="w-[25px]" data-tooltip-id="translate"/>
+                
+                <Language onClick={changeLanguage} type="text" className="w-[25px]" data-tooltip-id="translate"/>
 
                 <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" className="cursor-pointer w-[25px] lg:w-[30px]" data-tooltip-id="darkMode"/>
 
