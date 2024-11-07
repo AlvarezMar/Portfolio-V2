@@ -12,9 +12,9 @@ function Home(){
 
     return (
         <>
-        <section className="max-w-[1200px] mx-auto px-4 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_auto] place-items-center gap-9 lg:h-screen pb-24 lg:pb-52">
+        <section className="max-w-[1200px] mx-auto px-4 flex flex-col-reverse md:grid lg:grid md:grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto] place-items-center md:gap-5 gap-9 lg:h-screen pb-24 lg:pb-52">
             <div className="lg:text-end">
-                <h1 translate="no" className="text-[65px] lg:text-9xl font-extrabold lg:font-[900] leading-[4rem] lg:leading-[6.5rem] pb-1 lg:py-5">Fullstack Developer</h1>
+                <h1 translate="no" className="text-[65px] md:text-[80px] lg:text-9xl font-extrabold lg:font-[900] leading-[4rem] lg:leading-[6.5rem] pb-1 lg:py-5">Fullstack Developer</h1>
                 <span className="text-3xl font-bold">{t('menusAndHome.location.prefix')}<span className="text-accent">{t('menusAndHome.location.city')}</span></span>                
                 <p className="lg:ml-[17rem] mt-6 lg:mt-1 text-secondary dark:text-secondary_dark">{t('menusAndHome.welcome')}</p>
 
