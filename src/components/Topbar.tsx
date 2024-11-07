@@ -55,7 +55,9 @@ function Topbar(){
                     <img src={cv} alt="Curriculum vitae icon to open Juan Carlos's resume" className="w-[18px] lg:w-[20px]"/>
                 </a>
                 
-                <Language onClick={changeLanguage} type="text" className="w-[25px]" data-tooltip-id="translate"/>
+                <button>
+                    <Language onClick={changeLanguage} className="w-[25px] outline-0" data-tooltip-id="translate"/>
+                </button>
 
                 <img onClick={toggleTheme} src={darkMode ? light : dark} alt="Theme icon to change between themes" className="cursor-pointer w-[25px] lg:w-[30px]" data-tooltip-id="darkMode"/>
 
